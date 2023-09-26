@@ -12,7 +12,7 @@ const ServiceArea = ({ black }: any) => {
                          <ul className='flex w-1/2 md:w-1/6 flex-col gap-5 list-disc pt-16 '>
                               {
                                    list1.map((item:string,i:number)=>(
-                                        <li className='whitespace-nowrap'>{item}</li>
+                                        <li className='whitespace-nowrap' key={i}>{item}</li>
                                    ))
                               }
                          </ul>
@@ -21,7 +21,7 @@ const ServiceArea = ({ black }: any) => {
                          <ul className='flex flex-col gap-5 list-disc pt-16'>
                               {
                                    list2.map((item:string,i:number)=>(
-                                        <li className='whitespace-nowrap'>{item}</li>
+                                        <li key={i} className='whitespace-nowrap'>{item}</li>
                                    ))
                               }
                          </ul>

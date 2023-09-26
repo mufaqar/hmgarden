@@ -15,7 +15,7 @@ const ReviewCard = ({data}:any) => {
           <div className='flex item-center text-xl mt-2 gap-2 text-[#]'>
                {
                     [1,2,3,4,5].map((_,id)=>(
-                        <FaStar key={id} /> 
+                        <FaStar key={id} color="#FFC700"/> 
                     ))
                }
           </div>
