@@ -1,4 +1,4 @@
-import { Container, Header, Main, MainHeading, ServiceArea, ServiceCard } from '@/components/imports'
+import { Container, Header, Main, MainHeading, Review, ServiceArea, ServiceCard } from '@/components/imports'
 import Image from 'next/image'
 import { Services, ServicesSteps } from '@/const/services'
 import { IService } from '@/utils/types'
@@ -63,6 +63,7 @@ export default function Home() {
           </div>
         </Container>
       </section>
+      <Review black/>
       <ServiceArea />
       <section className='bg-black text-white py-20'>
         <Container className="grid md:grid-cols-2 items-center">

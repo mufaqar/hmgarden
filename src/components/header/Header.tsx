@@ -27,7 +27,7 @@ const Header = ({ white }: any) => {
                     `}>
                          <Link href="#" className='hover:underline font-light'>Home</Link>
                          <Link href="#" className='hover:underline font-light'>Services</Link>
-                         <Link href="#" className='hover:underline font-light'>About</Link>
+                         <Link href="/about" className='hover:underline font-light'>About</Link>
                          <Link href="#" className='hover:underline font-light'>Contact</Link>
                          <Link href="#" className='hover:underline font-light'>Blog</Link>
                          <Link href="#" className='hover:underline font-light'>Privacy</Link>
