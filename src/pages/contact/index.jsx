@@ -156,7 +156,7 @@ const ContactUs = () => {
                                              servicesPoint.length > 0 && <div className='flex flex-wrap my-4 gap-4'>
                                                   {
                                                        servicesPoint.map((item, id) => (
-                                                            <div class="flex items-center mr-4" ket={id}>
+                                                            <div class="flex items-center mr-4" key={id}>
                                                                  <input id={item} type="checkbox" name={item} value={item} onChange={(e) => handleValueChange(e)} class="w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2" />
                                                                  <label for={item} className='capitalize pl-2 text-sm'>{item}</label>
                                                             </div>
