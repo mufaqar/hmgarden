@@ -19,7 +19,7 @@ function FilterComp() {
 
   return (
     <div className='bg-black py-10 w-full h-auto mt-10 pb-20 text-white '>
-      <div className='container mx-auto flex flex-wrap justify-center gap-6 items-center md:gap-10 text-center px-4'>
+      <div className='container mx-auto flex flex-wrap justify-center gap-6 items-center md:gap-16 text-center px-4'>
         {
           ServicesCategories?.map((c, i) => (
             <div  className='flex flex-col items-center cursor-pointer' key={i} onClick={()=>handleTabs(c)}>
