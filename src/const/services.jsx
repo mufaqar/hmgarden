@@ -121,35 +121,30 @@ export const Services = [
      },
      
      {
-          category: "Tiling  and painting",
+          category: "Tiling and Painting",
           link: "/services",
-          image: "/images/tiling/wall.png",
+          image: "/images/tiling/tiling.jpg",
           title: "Wall and Floor Tiling"
-     },
-     {
-          category: "Tiling  and painting",
-          link: "/services",
-          image: "/images/tiling/wall.png",
-          title: "Furniture Disposal"
-     },
-     {
-          category: "Bathroom Installation",
-          link: "/services",
-          image: "/images/tiling/wall.png",
-          title: "Furniture Disposal"
-     },
-     {
-          category: "Walls and Other Surfaces Painting",
-          link: "/services",
-          image: "/images/tiling/wall.png",
-          title: "Furniture Disposal"
      },
      {
           category: "Tiling and Painting",
           link: "/services",
-          image: "/images/tiling/floor.jpg",
+          image: "/images/tiling/bath.jpg",
+          title: "Bathroom Installation"
+     },
+     {
+          category: "Tiling and Painting",
+          link: "/services",
+         image: "/images/tiling/wall.jpg",
+          title: "Walls and Other Surfaces Painting"
+     },
+     {
+          category: "Tiling and Painting",
+          link: "/services",
+         image: "/images/tiling/carpet.jpg",
           title: "Floor Carpet Fitting"
      },
+     
      {
           category: "Pressure Washing",
           link: "/services",
@@ -237,7 +232,7 @@ export const ServicesCategories = [
           icon: "/images/Vector5.png"
      },
      {
-          name: "Tiling and painting",
+          name: "Tiling and Painting",
           icon: "/images/Vector6.png"
      },
 ]
