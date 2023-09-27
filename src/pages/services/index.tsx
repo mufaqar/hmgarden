@@ -8,7 +8,6 @@ const Services = () => {
   return (
     <>
         <Header/>
-        <section></section>
         <ServicesFilter />
         <Filter/>
         <Rectanglepage/>

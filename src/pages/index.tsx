@@ -22,7 +22,7 @@ export default function Home() {
           <MainHeading>Our services</MainHeading>
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 mt-20'>
             {
-              Services.map((service: IService, idx: number) => {
+              Services.slice(0,7).map((service: IService, idx: number) => {
                 return (
                   <ServiceCard data={service} key={idx} />
                 )

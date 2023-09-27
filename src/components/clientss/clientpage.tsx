@@ -36,7 +36,7 @@ function clientpage() {
             </div>
            </div>
            <div>
-            <img src="/images/consulting.png" alt="" className='max-w-[500px]' />
+            <img src="/images/consulting.png" alt="" className='max-w-[500px] w-full' />
            </div>
         </div>
     </div>

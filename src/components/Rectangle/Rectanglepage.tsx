@@ -2,7 +2,7 @@ import React from 'react'
 
 function Rectanglepage() {
   return (
-    <div className='container mx-auto px-4 '>
+    <div className='container mx-auto px-4 mt-10'>
       <div className='grid lg:grid-cols-2 gap-10 items-center justify-center'>
       <div className="flex border mt-10 lg:w-[500px] w-full border-none lg:ml-14">
   <span className="text-[64px] md:text-26px mr-2 font-[600] text-black text-opacity-50 ">01</span>
