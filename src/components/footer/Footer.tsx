@@ -13,8 +13,8 @@ const Footer = () => {
         <Container className="flex flex-col items-center">
           <MainHeading>Ready to book with us?</MainHeading>
           <div className="flex item-center justify-center my-8 gap-3">
-            <Link href="#" className={`border p-2 px-7 rounded-[6px] border-black bg-black !text-white `}>Book Now</Link>
-            <Link href="#" className={`border p-2 px-7 rounded-[6px] border-black bg-black !text-white `}>Request a Quote</Link>
+            <Link href="/get-a-quote" className={`border p-2 px-7 rounded-[6px] border-black bg-black !text-white `}>Book Now</Link>
+            <Link href="/get-a-quote" className={`border p-2 px-7 rounded-[6px] border-black bg-black !text-white `}>Request a Quote</Link>
           </div>
           <div className='border border-black max-w-[450px] w-full flex item-center overflow-hidden pl-2 rounded-full'>
             <input type="text" className="outline-none w-full border-none placeholder:text-sm text-sm text-gray-500 placeholder:font-light p-2" placeholder="Submit your proposal"/>
@@ -34,7 +34,7 @@ const Footer = () => {
                     ))
                }
           </ul>
-          <p className='text-center text-gray-400'>Design with love © xyz 2023. All right reserved</p>
+          <p className='text-center text-gray-400'>Design with love by Home & Garden Masters © 2023. All right reserved</p>
         </Container>
       </footer>
   )
@@ -58,23 +58,23 @@ interface IFooterSocial {
 const navLinks = [
      {
           name: "Service",
-          link: "#"
+          link: "/services"
      },
      {
           name: "Support",
-          link: "#"
+          link: "/get-a-quote"
      },
      {
           name: "Company",
-          link: "#"
+          link: "/about"
      },
      {
-          name: "Legal",
-          link: "#"
+          name: "Privacy",
+          link: "/privacy"
      },
      {
-          name: "Join Us",
-          link: "#"
+          name: "Contact Us",
+          link: "/contact"
      },
 ]
 

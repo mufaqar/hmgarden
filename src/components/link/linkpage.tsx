@@ -5,7 +5,7 @@ function linkpage() {
   const Linkpage = [
     {
       text: 'Gardening',
-      href: '/',
+      href: '/services',
       imageSrc: '/images/Vector.svg',
     },
     {
@@ -15,27 +15,27 @@ function linkpage() {
     },
     {
       text: 'Removals & Storage',
-      href: '/contact',
+      href: '/services',
       imageSrc: '/images/Vector (1).svg',
     },
     {
       text: 'Pest Control',
-      href: '/contact',
+      href: '/services',
       imageSrc: '/images/Icon (1).svg',
     },
     {
       text: 'Waste Removal',
-      href: '/contact',
+      href: '/services',
       imageSrc: '/images/s.svg',
     },
     {
       text: 'Appliance Rapair',
-      href: '/contact',
+      href: '/services',
       imageSrc: '/images/j.svg',
     },
     {
       text: 'Builders',
-      href: '/contact',
+      href: '/services',
       imageSrc: '/images/Vector (2).svg',
     },
   ];
