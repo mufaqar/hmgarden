@@ -2,61 +2,61 @@ export const Services = [
      {
           category: "Gardening",
           link: "/services",
-          image: "/images/Gardening.png",
+          image: "/images/gardening/maintenance.jpg",
           title: "Garden Maintenance"
      },
      {
           category: "Gardening",
           link: "/services",
-          image: "/images/Gardening.png",
+          image: "/images/gardening/clearance.jpg",
           title: "Garden Clearance"
      },
      {
           category: "Gardening",
           link: "/services",
-          image: "/images/Gardening.png",
+          image: "/images/gardening/surgery.jpg",
           title: "Tree Surgery"
      },
      {
           category: "Gardening",
           link: "/services",
-          image: "/images/Gardening.png",
+          image: "/images/gardening/mowing.jpg",
           title: "Lawn mowing"
      },
      {
           category: "Gardening",
           link: "/services",
-          image: "/images/Gardening.png",
+          image: "/images/gardening/weeds.jpg",
           title: "Weeds control"
      },
      {
           category: "Gardening",
           link: "/services",
-          image: "/images/Gardening.png",
+          image: "/images/gardening/turfing.jpg",
           title: "Turfing"
      },
      {
           category: "Landscaping",
           link: "/services",
-          image: "/images/Landscaping.png",
+          image: "/images/landscaping/landscaping.jpg",
           title: "Planting"
      },
      {
           category: "Landscaping",
           link: "/services",
-          image: "/images/Landscaping.png",
+          image: "/images/landscaping/artificial.jpg",
           title: "Artificial grass laying"
      },
      {
           category: "Landscaping",
           link: "/services",
-          image: "/images/Landscaping.png",
+          image: "/images/landscaping/decking.jpg",
           title: "Decking installation"
      },
      {
           category: "Landscaping",
           link: "/services",
-          image: "/images/Landscaping.png",
+          image: "/images/landscaping/shed.jpg",
           title: "Shed installation"
      },
      {
@@ -74,80 +74,80 @@ export const Services = [
      {
           category: "Fencing",
           link: "/services",
-          image: "/images/Fencing.png",
+          image: "/images/fence/wooden.jpg",
           title: "Wooden Fencing"
      },
      {
           category: "Fencing",
           link: "/services",
-          image: "/images/Fencing.png",
+          image: "/images/fence/metal.jpg",
           title: "Metal Fencing"
      },
      {
           category: "Fencing",
           link: "/services",
-          image: "/images/Fencing.png",
+          image: "/images/fence/composite.jpg",
           title: "Composite Fencing"
      },
      {
           category: "Waste Removal",
           link: "/services",
-          image: "/images/Waste Removal.png",
+          image: "/images/waste/house.jpg",
           title: "House Clearance"
      },
      {
           category: "Waste Removal",
           link: "/services",
-          image: "/images/Waste Removal.png",
+          image: "/images/waste/green.jpg",
           title: "Green Waste Disposal"
      },
      {
           category: "Waste Removal",
           link: "/services",
-          image: "/images/Waste Removal.png",
+             image: "/images/waste/shed.jpg",
           title: "Shed Clearance/Disposal"
      },
      {
           category: "Waste Removal",
           link: "/services",
-          image: "/images/Waste Removal.png",
+             image: "/images/waste/building.jpg",
           title: "Building Waste Disposal"
      },
      {
           category: "Waste Removal",
           link: "/services",
-          image: "/images/Waste Removal.png",
+             image: "/images/waste/furniture.jpg",
           title: "Furniture Disposal"
      },
      
      {
           category: "Tiling  and painting",
           link: "/services",
-          image: "/images/Tiling  and painting.png",
+          image: "/images/tiling/wall.png",
           title: "Wall and Floor Tiling"
      },
      {
           category: "Tiling  and painting",
           link: "/services",
-          image: "/images/Tiling  and painting.png",
+          image: "/images/tiling/wall.png",
           title: "Furniture Disposal"
      },
      {
           category: "Bathroom Installation",
           link: "/services",
-          image: "/images/Tiling  and painting.png",
+          image: "/images/tiling/wall.png",
           title: "Furniture Disposal"
      },
      {
           category: "Walls and Other Surfaces Painting",
           link: "/services",
-          image: "/images/Tiling  and painting.png",
+          image: "/images/tiling/wall.png",
           title: "Furniture Disposal"
      },
      {
-          category: "Tiling  and painting",
+          category: "Tiling and Painting",
           link: "/services",
-          image: "/images/Tiling  and painting.png",
+          image: "/images/tiling/floor.jpg",
           title: "Floor Carpet Fitting"
      },
      {
