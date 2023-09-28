@@ -84,10 +84,12 @@ const ContactUs = () => {
                                    </div>
                                    <div className='flex flex-col mt-3'>
                                         <label className='capitalize text-sm'>What kind of property is it?</label>
-                                        <div className='grid grid-cols-3 gap-3'>
-                                             <input type="text" {...register("residential", { required: true })} className='p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Residential ' />
-                                             <input type="text" {...register("public", { required: true })} className='p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Public' />
-                                             <input type="text" {...register("commercial", { required: true })} className='p-2 mt-1 flex-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Office or Commercial' />
+                                        <div className='grid grid-cols gap-3'>
+                                                 <select {...register("type")} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-gray-400 outline-none'>
+                                                       <option value="residential">Residential</option>
+                                                       <option value="public">Public</option>
+                                                       <option value="commercial">Commercial</option>
+                                                       </select>
                                         </div>
                                    </div>
                                    <div className='flex flex-col mt-3'>
