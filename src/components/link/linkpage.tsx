@@ -27,7 +27,14 @@ function linkpage() {
       text: 'Interior/Exterior Tiling  and Painting',
       href: '/services',
       imageSrc: '/images/j.svg',
+    },
+    {
+      text: 'Pressure Washing',
+      href: '/services',
+      imageSrc: '/images/j.svg',
     }
+
+    
   ];
 
 
