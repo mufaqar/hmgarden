@@ -9,12 +9,12 @@ function linkpage() {
       imageSrc: '/images/Vector.svg',
     },
     {
-      text: 'Trades and odd jobs',
+      text: 'Landscaping',
       href: '/about',
       imageSrc: '/images/Icon.svg',
     },
     {
-      text: 'Removals & Storage',
+      text: 'Fencing',
       href: '/services',
       imageSrc: '/images/Vector (1).svg',
     },
@@ -24,15 +24,10 @@ function linkpage() {
       imageSrc: '/images/s.svg',
     },
     {
-      text: 'Appliance Rapair',
+      text: 'Interior/Exterior Tiling  and Painting',
       href: '/services',
       imageSrc: '/images/j.svg',
-    },
-    {
-      text: 'Builders',
-      href: '/services',
-      imageSrc: '/images/Vector (2).svg',
-    },
+    }
   ];
 
 
