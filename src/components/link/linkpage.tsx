@@ -18,12 +18,7 @@ function linkpage() {
       href: '/services',
       imageSrc: '/images/Vector (1).svg',
     },
-    {
-      text: 'Pest Control',
-      href: '/services',
-      imageSrc: '/images/Icon (1).svg',
-    },
-    {
+     {
       text: 'Waste Removal',
       href: '/services',
       imageSrc: '/images/s.svg',
