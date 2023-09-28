@@ -221,6 +221,45 @@ export const Services = [
   },
 ];
 
+
+export const MainServices = [
+  {
+       title: "Gardening",
+       link: "#",
+       image: "/images/Gardening.png"
+  },
+  {
+       title: "Landscaping",
+       link: "#",
+       image: "/images/Landscaping.png"
+  },
+  {
+       title: "Fencing",
+       link: "#",
+       image: "/images/Fencing.png"
+  },
+  {
+       title: "Waste Removal",
+       link: "#",
+       image: "/images/Waste Removal.png"
+  },
+  {
+       title: "Removals & Storage",
+       link: "#",
+       image: "/images/Removals & Storage.png"
+  },
+  {
+       title: "Tiling  and painting",
+       link: "#",
+       image: "/images/Tiling  and painting.png"
+  },
+  {
+       title: "Pressure Washing",
+       link: "#",
+       image: "/images/Pressure Washing.png"
+  },
+]
+
 export const ServicesSteps = [
   {
     icon: '/svg/customiseBook.svg',

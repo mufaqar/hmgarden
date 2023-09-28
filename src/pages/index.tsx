@@ -1,6 +1,6 @@
 import { Container, Header, Main, MainHeading, Review, ServiceArea, ServiceCard } from '@/components/imports'
 import Image from 'next/image'
-import { Services, ServicesSteps } from '@/const/services'
+import { MainServices, ServicesSteps } from '@/const/services'
 import { IService } from '@/utils/types'
 import background from '../../public/images/stepbg.png'
 import StepCard from '@/components/card/step.card'
@@ -22,7 +22,7 @@ export default function Home() {
           <MainHeading>Our services</MainHeading>
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 mt-20'>
             {
-              Services.slice(0,7).map((service: IService, idx: number) => {
+              MainServices.slice(0,7).map((service: IService, idx: number) => {
                 return (
                   <ServiceCard data={service} key={idx} />
                 )
