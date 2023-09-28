@@ -8,10 +8,12 @@ const About = () => {
     <>   
           <Header black/>
           <Container className="py-20 flex flex-col items-center">
-               <MainHeading>Who we are?</MainHeading>
-               <p className='mt-4 text-center max-w-[800px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum nibh tellus molestie nunc non blandit massa enim. </p>
-               <Link href="#" className={`border p-1 mt-8 px-8 border-black bg-black !text-white `}>Find Us</Link>
-               <p className='mt-3 text-center'>Fint out if our franchisees cover your area.</p>
+               <MainHeading>Why Choose Us?</MainHeading>
+               <p className='mt-4 text-center max-w-[800px]'>6 Years of Proven Experience: With six years of dedicated experience, we have a proven track record of delivering high-quality results. Our extensive experience enables us to tackle a wide range of projects with confidence and expertise.</p>
+             
+               <p className='mt-4 text-center max-w-[800px]'>Competitive and Reliable Pricing: Home&Garden Masters offers pricing that not only fits your budget but also provides excellent value for your investment. Our transparent and competitive rates ensure that you receive the best services without breaking the bank.</p>
+          
+               <Link href="/get-a-qoute" className={`border p-1 mt-8 px-8 border-black bg-black !text-white `}>Contact Us</Link>
           </Container>
           <AboutUs/>
           <OurMission/>

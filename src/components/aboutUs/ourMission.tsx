@@ -5,7 +5,7 @@ const OurMission = () => {
   return (
     <Container className="flex flex-col items-center my-20">
           <MainHeading>Our mission</MainHeading>
-          <p className='mt-4 text-center max-w-[900px]'>Through innovation and technology, we are able to provide top quality, on-demand response to all your individual cleaning and maintenance needs. We always listen to what you have to say and you can contact us at any time to make your postponed spring cleaning or renovation project happen.</p>
+          <p className='mt-4 text-center max-w-[900px]'>Fully Trained and Professional Teams: Our teams are comprised of highly skilled and trained professionals who are passionate about what they do. They bring expertise, creativity, and professionalism to every project, ensuring your satisfaction.</p>
           <div className='grid grid-cols-4 w-full mt-12'>
                <div className=' flex justify-center flex-col items-center'>
                     <button className='text-white p-2 rounded-full bg-[#24AA02] text-xl md:text-3xl md:w-[65px] z-[1] md:h-[65px] w-[50px] h-[50px]'>01</button>

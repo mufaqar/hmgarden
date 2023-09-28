@@ -70,7 +70,7 @@ export default function Home() {
             <div>
               <MainHeading className="!text-left md:!leading-[60px]">Start your own franchise business with H&M Garden Masters Services</MainHeading>
               <p className='max-w-[500px] mb-20 mt-4'>Develop your own successful business by investing in a proven franchise model that takes all risks out and provides full support. A business of your own but not on your own.</p>
-              <Link href="#" className={`border p-2 px-7 rounded-[6px] bg-white !text-black `}>Request a Quote</Link>
+              <Link href="/get-a-quote" className={`border p-2 px-7 rounded-[6px] bg-white !text-black `}>Request a Quote</Link>
             </div>
             <div>
               <img src="/images/watercane.png" alt=""/>
