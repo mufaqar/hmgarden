@@ -6,32 +6,32 @@ function linkpage() {
     {
       text: 'Gardening',
       href: '/services',
-      imageSrc: '/images/Vector.svg',
+      imageSrc: '/images/Vector1.png',
     },
     {
       text: 'Landscaping',
       href: '/about',
-      imageSrc: '/images/Icon.svg',
+      imageSrc: '/images/Vector2.png',
     },
     {
       text: 'Fencing',
       href: '/services',
-      imageSrc: '/images/Vector (1).svg',
+      imageSrc: '/images/Vector3.png',
     },
      {
       text: 'Waste Removal',
       href: '/services',
-      imageSrc: '/images/s.svg',
-    },
-    {
-      text: 'Interior/Exterior Tiling  and Painting',
-      href: '/services',
-      imageSrc: '/images/j.svg',
+      imageSrc: '/images/Vector4.png',
     },
     {
       text: 'Pressure Washing',
       href: '/services',
-      imageSrc: '/images/j.svg',
+      imageSrc: '/images/Vector5.png',
+    },
+    {
+      text: 'Tiling and Painting',
+      href: '/services',
+      imageSrc: '/images/Vector6.png',
     }
 
     

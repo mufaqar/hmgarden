@@ -13,7 +13,7 @@ const Footer = () => {
         <Container className="flex flex-col items-center">
           <MainHeading>Ready to book with us?</MainHeading>
           <div className="flex item-center justify-center my-8 gap-3">
-            <Link href="/get-a-quote" className={`border p-2 px-7 rounded-[6px] border-black bg-black !text-white `}>Book Now</Link>
+           
             <Link href="/get-a-quote" className={`border p-2 px-7 rounded-[6px] border-black bg-black !text-white `}>Request a Quote</Link>
           </div>
           <div className='border border-black max-w-[450px] w-full flex item-center overflow-hidden pl-2 rounded-full'>
@@ -81,7 +81,7 @@ const navLinks = [
 const footerSocial = [
      {
           icon: <BsEnvelope/>,
-          link: "#"
+          link: "mailto:"
      },
      {
           icon: <BiMessageDetail/>,
