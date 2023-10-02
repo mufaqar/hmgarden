@@ -5,14 +5,12 @@ import { IService } from '@/utils/types'
 import background from '../../public/images/stepbg.png'
 import StepCard from '@/components/card/step.card'
 import Link from 'next/link'
+import { GetStaticProps } from 'next'
+import apolloClient from '@/config/client'
+import { Types } from '@/config/query'
 
-interface IServicesSteps {
-  icon: string,
-  title: string,
-  content: string
-}
 
-export default function Home() {
+export default function Home({ allTypes }: any) {
   return (
     <>
       <Header white />
@@ -22,9 +20,16 @@ export default function Home() {
           <MainHeading>Our services</MainHeading>
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 mt-20'>
             {
-              MainServices.slice(0,7).map((service: IService, idx: number) => {
+              allTypes.map((service: any, idx: number) => {
                 return (
-                  <ServiceCard data={service} key={idx} />
+                  <>
+                    <div className="relative w-full serviceCard-shadow group">
+                      <Image src={service?.servicesTypeInfo?.image?.mediaItemUrl} alt={service.name} width={344} height={187} className='w-full ' />
+                      <div className='absolute group-hover:h-full  bottom-0 bg-black/40  flex flex-col justify-center items-center p-3 text-white w-full transition-all duration-500 ease-in-out text-center'>
+                        <Link href={`/services?type=${service.name}`} className='cursor-pointer text-xl'> {service.name}</Link>
+                      </div>
+                    </div>
+                  </>
                 )
               })
             }
@@ -36,7 +41,7 @@ export default function Home() {
           <MainHeading className='text-white max-w-[800px] '>How Home & Garden Masters Services works</MainHeading>
           <div className='grid md:grid-cols-3 w-full my-24 gap-10'>
             {
-              ServicesSteps.map((item: IServicesSteps, idx: number) => (
+              ServicesSteps.map((item: any, idx: number) => (
                 <StepCard data={item} key={idx} id={idx} />
               ))
             }
@@ -63,20 +68,33 @@ export default function Home() {
           </div>
         </Container>
       </section>
-      <Review black/>
+      <Review black />
       <ServiceArea />
       <section className='bg-black text-white py-20'>
         <Container className="grid md:grid-cols-2 items-center">
-            <div>
-              <MainHeading className="!text-left md:!leading-[60px]">Start your own franchise business with H&M Garden Masters Services</MainHeading>
-              <p className='max-w-[500px] mb-20 mt-4'>Develop your own successful business by investing in a proven franchise model that takes all risks out and provides full support. A business of your own but not on your own.</p>
-              <Link href="/get-a-quote" className={`border p-2 px-7 rounded-[6px] bg-white !text-black `}>Request a Quote</Link>
-            </div>
-            <div>
-              <img src="/images/watercane.png" alt=""/>
-            </div>
+          <div>
+            <MainHeading className="!text-left md:!leading-[60px]">Start your own franchise business with H&M Garden Masters Services</MainHeading>
+            <p className='max-w-[500px] mb-20 mt-4'>Develop your own successful business by investing in a proven franchise model that takes all risks out and provides full support. A business of your own but not on your own.</p>
+            <Link href="/get-a-quote" className={`border p-2 px-7 rounded-[6px] bg-white !text-black `}>Request a Quote</Link>
+          </div>
+          <div>
+            <img src="/images/watercane.png" alt="" />
+          </div>
         </Container>
       </section>
     </>
   )
+}
+
+
+export const getStaticProps: GetStaticProps = async () => {
+  const [typesRes] = await Promise.all([
+    apolloClient.query({ query: Types }),
+  ]);
+  const allTypes = typesRes?.data.types.nodes
+  return {
+    props: {
+      allTypes
+    },
+  };
 }

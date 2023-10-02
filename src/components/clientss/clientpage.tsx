@@ -35,7 +35,7 @@ function clientpage() {
                 <p>Firstly, the cleaner will inspect if your cooker works appropriately. After that, all the removable parts will be disassembled and placed in a dip tank with a powerful cleaning solution. The rest of the appliance will be thoroughly scrubbed. And lastly, the cleaner will assemble the parts back and will test if your cooker functions.</p>
             </div>
            </div>
-           <div>
+           <div className='flex justify-end flex-1'>
             <img src="/images/consulting.png" alt="" className='max-w-[500px] w-full' />
            </div>
         </div>
