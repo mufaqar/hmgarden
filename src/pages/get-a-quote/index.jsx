@@ -120,7 +120,7 @@ const ContactUs = () => {
                                    </div>
                               </div>
                               <div className='flex flex-col justify-between items-end'>
-                                   <div className='w-full '>
+                                   <div className='w-full mb-6'>
 
                                         <div className='flex flex-col mt-3'>
                                              <label className='capitalize text-sm'>What Kind of services do you need?</label>
