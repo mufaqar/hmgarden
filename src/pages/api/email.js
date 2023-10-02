@@ -11,8 +11,8 @@ export default function (req, res) {
           port: 465,
           host: "smtp.gmail.com",
           auth: {
-               user: FROM,
-               pass: PASSWORD,
+               user: "gillanix007@gmail.com",
+               pass: "vdrylevqwbmdasgu",
           },
           secure: true,
      })
@@ -20,7 +20,7 @@ export default function (req, res) {
      // step-2
      const mailData = {
           from: FROM,
-          to: TO,
+          to: `zunairgillani54@gmail.com, ${req.body.email}`,
           subject: `Message From ${req.body.name}`,
           text: req.body.message + " | Sent from: " + req.body.email,
           html: `<div>${req.body.message}</div><p>Sent from:
