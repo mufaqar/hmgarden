@@ -93,9 +93,9 @@ const ContactUs = () => {
                                         <label className='capitalize text-sm'>How is the access to the Garden/Property?</label>
                                         <div className='grid grid-cols gap-3'>
                                              <select {...register("property_access")} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-black placeholder:text-gray-400 outline-none'>
-                                                  <option value="residential">External Access</option>
-                                                  <option value="public">Through House</option>
-                                                  <option value="commercial">Through Garage</option>
+                                                  <option value="External Access">External Access</option>
+                                                  <option value="Through House">Through House</option>
+                                                  <option value="Through Garage">Through Garage</option>
                                              </select>
                                         </div>
                                    </div>
