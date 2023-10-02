@@ -1,14 +1,10 @@
 import React from 'react'
 import { Container, Header, MainHeading } from '@/components/imports'
-import Image from 'next/image'
-import Link from '@/components/link/linkpage'
 import { useRouter } from 'next/router'
-import { AllServices, ServiceSingle } from '../../config/query'
+import {  ServiceSingle } from '../../config/query'
 import apolloClient from '../../config/client'
 
 const Slug = ({ singleService }) => {
-     console.log("🚀 ~ file: [slug].jsx:10 ~ Slug ~ allServices:", singleService)
-     const { query } = useRouter()
 
      return (
           <>
@@ -20,7 +16,6 @@ const Slug = ({ singleService }) => {
                    dangerouslySetInnerHTML={{ __html: singleService.content }}
                    />
                    </div>
-                    <Link />
                </Container>
                
           </>

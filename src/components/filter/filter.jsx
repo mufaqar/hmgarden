@@ -1,27 +1,30 @@
 import React, { useEffect, useState } from 'react'
 import { ServiceCard } from '../imports'
+import Link from 'next/link'
 
 
-function FilterComp({allServices, allTypes}) {
+function FilterComp({ allServices, allTypes }) {
 
   const [ServicesList, setServicesList] = useState()
-  
+  const [type, setType] = useState()
+
   const handleTabs = (category) => {
     const filtedData = allServices.filter(item => item?.terms?.nodes[0].name === category)
     setServicesList(filtedData)
+    setType(category)
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     const filtedData = allServices.filter(item => item.terms.nodes[0].name === "Gardening")
     setServicesList(filtedData)
-  },[])
+  }, [])
 
   return (
     <div className='bg-black py-10 w-full h-auto mt-10 pb-20 text-white '>
       <div className='container mx-auto flex flex-wrap justify-center gap-6 items-center md:gap-16 text-center px-4'>
         {
           allTypes?.map((c, i) => (
-            <div  className='flex flex-col items-center cursor-pointer' key={i} onClick={()=>handleTabs(c.name)}>
+            <div className='flex flex-col items-center cursor-pointer' key={i} onClick={() => handleTabs(c.name)}>
               <img src={c?.servicesTypeInfo?.icon?.mediaItemUrl} alt="" className='sm:w-14 sm:h-14 w-12 mb-2 h-12' />
               <h4 className='text-sm sm:text-base'>{c.name}</h4>
             </div>
@@ -38,7 +41,10 @@ function FilterComp({allServices, allTypes}) {
           })
         }
       </div>
-
+      {
+        type === "Pressure Washing" &&
+        <div className="flex items-center justify-center mt-20 w-full"> <Link href="https://professionalpowerwashing.co.uk/our-services/wall-power-washing/" target="_blank" className="bg-white hover:scale-105 p-2 px-7 text-black">Check availability and prices</Link>      </div>
+      }
     </div>
   )
 }
