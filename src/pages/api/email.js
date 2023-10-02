@@ -23,8 +23,16 @@ export default function (req, res) {
           to: `zunairgillani54@gmail.com, ${req.body.email}`,
           subject: `Message From ${req.body.name}`,
           text: req.body.message + " | Sent from: " + req.body.email,
-          html: `<div>${req.body.message}</div><p>Sent from:
-         ${req.body.email}</p>`,
+          html: `
+          <p><strong>What kind of property is it: </strong> ${req.body.property_type}</p>
+          <p><strong>What Kind Of Services Do You Need: </strong> ${JSON.stringify(req.body.servicesType)}</p>
+          <p><strong>How Is The Access To The Garden/Property: </strong> ${req.body.property_access}</p>
+          <p><strong>When Would You Like The Work To Begin: </strong> ${req.body.workToBegin}</p>
+          <p><strong>Please Describe The Job You Would Like To Be Done In A Few Words: </strong> ${req.body.describe_job}</p>
+          <p><strong>Full Name: </strong> ${req.body.full_name}</p>
+          <p><strong>E-Mail: </strong> ${req.body.email}</p>
+          <p><strong>Address: </strong> ${req.body.address}</p>
+          `,
           attachments: [{
                filename: "smtpjs.png",
                path: "https://networkprogramming.files.wordpress.com/2017/11/smtpjs.png"
@@ -35,10 +43,10 @@ export default function (req, res) {
      transporter.sendMail(mailData, function (err, info) {
           if (err)
                console.log(err)
-          else{
-               res.status(200).json({message:"email sended!", info})
+          else {
+               res.status(200).json({ message: "email sended!", info })
           }
      })
 
-     
+
 }

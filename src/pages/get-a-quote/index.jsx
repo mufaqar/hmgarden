@@ -82,7 +82,7 @@ const ContactUs = () => {
                                    <div className='flex flex-col mt-3'>
                                         <label className='capitalize text-sm'>What kind of property is it?</label>
                                         <div className='grid grid-cols gap-3'>
-                                             <select {...register("type")} className='p-2 mt-1 appearance-none text-black placeholder:text-gray-400 rounded-sm px-4 _select w-full font-light  outline-none'>
+                                             <select {...register("property_type")} className='p-2 mt-1 appearance-none text-black placeholder:text-gray-400 rounded-sm px-4 _select w-full font-light  outline-none'>
                                                   <option value="residential">Residential</option>
                                                   <option value="public">Public</option>
                                                   <option value="commercial">Commercial</option>
@@ -92,7 +92,7 @@ const ContactUs = () => {
                                    <div className='flex flex-col mt-3'>
                                         <label className='capitalize text-sm'>How is the access to the Garden/Property?</label>
                                         <div className='grid grid-cols gap-3'>
-                                             <select {...register("type")} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-black placeholder:text-gray-400 outline-none'>
+                                             <select {...register("property_access")} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-black placeholder:text-gray-400 outline-none'>
                                                   <option value="residential">External Access</option>
                                                   <option value="public">Through House</option>
                                                   <option value="commercial">Through Garage</option>
@@ -108,15 +108,15 @@ const ContactUs = () => {
 
                                    <div className='mt-3'>
                                         <label className='capitalize text-sm '>Please describe the job you would like to be done in a few words. </label>
-                                        <textarea {...register("accessToGarden", { required: true })} className='p-2 h-[60px] mt-1 rounded-sm px-4 w-full placeholder:font-light text-gray-600 outline-none' rows={6}></textarea>
+                                        <textarea {...register("describe_job", { required: true })} className='p-2 h-[60px] mt-1 rounded-sm px-4 w-full placeholder:font-light text-gray-600 outline-none' rows={6}></textarea>
                                    </div>
                                    <div className='flex flex-col mt-3'>
                                         <label className='capitalize text-sm'>First and Last Name</label>
-                                        <input type="text" {...register("name", { required: true })} className='p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Enter your name' />
+                                        <input type="text" {...register("full_name", { required: true })} className='p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Enter your name' />
                                    </div>
                                    <div className='mt-3'>
                                         <label className='capitalize text-sm'>Job address ( Nr, Street, Post Code) </label>
-                                        <input type="text" {...register("street", { required: true })} className='p-2 mt-1 rounded-sm px-4 w-full placeholder:font-light text-gray-600 outline-none' placeholder='Enter Nr, Street' />
+                                        <input type="text" {...register("address", { required: true })} className='p-2 mt-1 rounded-sm px-4 w-full placeholder:font-light text-gray-600 outline-none' placeholder='Enter Nr, Street' />
                                    </div>
                               </div>
                               <div className='flex flex-col justify-between items-end'>
@@ -157,10 +157,10 @@ const ContactUs = () => {
                                              <label className='capitalize text-sm'>When would you like the work to begin?</label>
                                              <div className="relative">
                                                   <select {...register("workToBegin")} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-black placeholder:text-gray-400 outline-none'>
-                                                       <option value="ASAP">I am Flexible</option>
-                                                       <option value="ASAP 2">As Soon as Possible</option>
-                                                       <option value="ASAP 3">In the next few days</option>
-                                                       <option value="ASAP 3">In the next few weeks</option>
+                                                       <option value="I am Flexible">I am Flexible</option>
+                                                       <option value="As Soon as Possible">As Soon as Possible</option>
+                                                       <option value="In the next few days">In the next few days</option>
+                                                       <option value="In the next few weeks">In the next few weeks</option>
                                                   </select>
                                                   <IoIosArrowDown className="text-2xl absolute right-3 top-[13px] text-black" />
                                              </div>
