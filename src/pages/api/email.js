@@ -20,7 +20,7 @@ export default function (req, res) {
      // step-2
      const mailData = {
           from: FROM,
-          to: `zunairgillani54@gmail.com, ${req.body.email}`,
+          to: `mufaqar@gmail.com, ${req.body.email}`,
           subject: `Message From ${req.body.name}`,
           text: req.body.message + " | Sent from: " + req.body.email,
           html: `
