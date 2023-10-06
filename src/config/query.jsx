@@ -20,7 +20,7 @@ query AllServices {
          }
        }
      }
-      types {
+      types(where: {parent: 0}) {
         nodes {
           name
           servicesTypeInfo {
@@ -69,3 +69,27 @@ query AllServices {
     }
   }
   `;
+
+  export const TypesWithChildren = gql `
+  query TypesWithChildren {
+    types(first: 100) {
+      nodes {
+        name
+        servicesTypeInfo {
+          image {
+            mediaItemUrl
+          }
+        }
+        children {
+          nodes {
+            name
+            servicesTypeInfo {
+              image {
+                mediaItemUrl
+              }
+            }
+          }
+        }
+      }
+    }
+  }`

@@ -2,18 +2,22 @@ import React, { useEffect, useState } from 'react'
 import { ServiceCard } from '../imports'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
 
 
-function FilterComp({ allServices, allTypes }) {
-console.log("🚀 ~ file: filter.jsx:8 ~ FilterComp ~ allTypes:", allTypes)
+function FilterComp({ allServices, allTypes, allTypesWithChildren }) {
 
   const [ServicesList, setServicesList] = useState()
+  console.log("🚀 ~ file: filter.jsx:11 ~ FilterComp ~ ServicesList:", ServicesList)
   const [type, setType] = useState('Gardening')
-  const {query} = useRouter()
+  const [cServices, setCServices] = useState()
+  const { query } = useRouter()
 
 
   const handleTabs = (category) => {
     const filtedData = allServices.filter(item => item?.terms?.nodes[0].name === category)
+    const childWithService = allTypesWithChildren.find((c) => c.name === category)
+    setCServices(childWithService)
     setServicesList(filtedData)
     setType(category)
   }
@@ -21,24 +25,28 @@ console.log("🚀 ~ file: filter.jsx:8 ~ FilterComp ~ allTypes:", allTypes)
   useEffect(() => {
     const filtedData = allServices.filter(item => item.terms.nodes[0].name === type)
     setServicesList(filtedData)
-
   }, [type])
 
+  const handleSubServices = (subServiceName) => {
+    const filtedData = allServices.filter(item => item?.terms?.nodes[0].name === subServiceName)
+    setServicesList(filtedData)
+    setCServices()
+  }
+
   useEffect(() => {
-    if(query.type === "Waste Removal"){
+    if (query.type === "Waste Removal") {
       setType('Waste Removal')
-    }else if(query.type === "Gardening"){
+    } else if (query.type === "Gardening") {
       setType('Gardening')
-    }else if(query.type === "Landscaping"){
+    } else if (query.type === "Landscaping") {
       setType('Landscaping')
-    }else if(query.type === "Fencing"){
+    } else if (query.type === "Fencing") {
       setType('Fencing')
-    }else if(query.type === "Tiling and Painting"){
+    } else if (query.type === "Tiling and Painting") {
       setType('Tiling and Painting')
-    }else if(query.type === "Pressure Washing"){
+    } else if (query.type === "Pressure Washing") {
       setType('Pressure Washing')
     }
-
   }, [query])
 
   return (
@@ -55,6 +63,18 @@ console.log("🚀 ~ file: filter.jsx:8 ~ FilterComp ~ allTypes:", allTypes)
       </div>
 
       <div className='grid sm:grid-cols-2 px-3 container mx-auto lg:grid-cols-3 gap-10 mt-16 '>
+        { // sub services list if exist 
+          cServices?.children?.nodes?.map((i) => {
+            return (
+              <div className="relative max-h-[250px] w-full h-full serviceCard-shadow group" key={i.name} onClick={()=>handleSubServices(i.name)}>
+                <Image src={i?.servicesTypeInfo?.image?.mediaItemUrl} alt={i.name} width={344} height={187} className='w-full h-full object-cover' />
+                <div className='absolute group-hover:h-full  bottom-0 bg-black/40  flex flex-col justify-center items-center p-3 text-white w-full transition-all duration-500 ease-in-out text-center'>
+                  <button className='text-xl'> {i.name}</button>
+                </div>
+              </div>
+            )
+          })
+        }
         {
           ServicesList?.map((service, idx) => {
             return (
@@ -62,6 +82,7 @@ console.log("🚀 ~ file: filter.jsx:8 ~ FilterComp ~ allTypes:", allTypes)
             )
           })
         }
+
       </div>
       {
         type === "Pressure Washing" &&

@@ -5,15 +5,15 @@ import { Filter, Gardenpage, Header, Review, ServiceArea, ServicesFilter, } from
 import React from 'react'
 import { GetStaticProps } from 'next'
 import  apolloClient from '../../config/client'
-import {AllServices} from '../../config/query'
+import {AllServices, TypesWithChildren} from '../../config/query'
 
-const Services = ({allServices, allTypes}:any) => {
+const Services = ({allServices, allTypes, allTypesWithChildren}:any) => {
 
   return (
     <>
         <Header/>
         <ServicesFilter />
-        <Filter allServices={allServices} allTypes={allTypes}/>
+        <Filter allServices={allServices} allTypes={allTypes} allTypesWithChildren={allTypesWithChildren}/>
         <Rectanglepage/>
         <Gardenpage/>
         <Review/>
@@ -29,15 +29,18 @@ export default Services
 
 
 export const getStaticProps: GetStaticProps = async () => {
-  const [services] = await Promise.all([
+  const [services, typesWithChil] = await Promise.all([
     apolloClient.query({ query: AllServices }),
+    apolloClient.query({ query: TypesWithChildren }),
   ]);
   const allServices = services?.data?.services?.nodes
   const allTypes = services?.data.types.nodes
+  const allTypesWithChildren = typesWithChil?.data.types.nodes
   return {
     props: {
       allServices,
-      allTypes
+      allTypes,
+      allTypesWithChildren
     },
   };
 }
