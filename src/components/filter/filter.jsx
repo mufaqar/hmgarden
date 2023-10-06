@@ -5,9 +5,9 @@ import { useRouter } from 'next/router'
 
 
 function FilterComp({ allServices, allTypes }) {
+console.log("🚀 ~ file: filter.jsx:8 ~ FilterComp ~ allTypes:", allTypes)
 
   const [ServicesList, setServicesList] = useState()
-  console.log("🚀 ~ file: filter.jsx:10 ~ FilterComp ~ ServicesList:", ServicesList)
   const [type, setType] = useState('Gardening')
   const {query} = useRouter()
 
@@ -47,7 +47,7 @@ function FilterComp({ allServices, allTypes }) {
         {
           allTypes?.map((c, i) => (
             <div className='flex flex-col items-center cursor-pointer' key={i} onClick={() => handleTabs(c.name)}>
-              <img src={c?.servicesTypeInfo?.icon?.mediaItemUrl} alt="" className='sm:w-14 sm:h-14 w-8 mb-2 h-8' />
+              <img src={c?.servicesTypeInfo?.icon?.mediaItemUrl} alt="" className={`sm:w-14 sm:h-14 w-8 mb-2 h-8 ${c.name === 'Fencing' && 'invert sm:!w-16'}`} />
               <h4 className='text-xs sm:text-base'>{c.name}</h4>
             </div>
           ))

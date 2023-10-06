@@ -48,7 +48,7 @@ function linkpage() {
         <nav className="lg:px-20 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-5 max-w-7xl mx-auto">
           {Linkpage.map((link, index) => (
             <div key={index} className="border p-4 flex flex-col md:flex-row items-center gap-3 bg-white rounded-md">
-              <img src={link.imageSrc} alt={link.text} className="w-6 h-6" />
+              <img src={link.imageSrc} alt={link.text} className="w-6 h-6 invert" />
               <Link href={link.href} className="text-[#63788F]">
                 {link.text}
               </Link>
