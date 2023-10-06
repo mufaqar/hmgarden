@@ -1,9 +1,6 @@
 export {default as Header} from './header/Header'
 export {default as Main} from './main/Main'
 export {default as Container} from './ui/Container'
-<<<<<<< HEAD
-export {default as ServiceCard} from './card/service.card'
-=======
 export {default as ServiceCard} from './card/service.card'
 export {default as MainHeading} from './ui/MainHeading'
 export {default as ServiceArea} from './serviceArea/ServiceArea'
@@ -20,4 +17,3 @@ export {default as Gardenpage} from './garden/Gardenpage'
 export {default as clientss} from './clientss/clientpage'
 export {default as CategoriesList} from './link/linkpage'
 export {default as Heropage} from './hero/heropage'
->>>>>>> main
