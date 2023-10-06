@@ -24,7 +24,7 @@ export default function Home({ allTypes }: any) {
                 return (
                   <>
                     <div key={idx} className="relative w-full serviceCard-shadow group">
-                      <Image src={service?.servicesTypeInfo?.image?.mediaItemUrl} alt={service.name} width={344} height={187} className='w-full ' />
+                      <Image src={service?.servicesTypeInfo?.image?.mediaItemUrl} alt={service.name} width={344} height={187} className='w-full h-full object-cover' />
                       <div className='absolute group-hover:h-full  bottom-0 bg-black/40  flex flex-col justify-center items-center p-3 text-white w-full transition-all duration-500 ease-in-out text-center'>
                         <Link href={`/services?type=${service.name}`} className='cursor-pointer text-xl'> {service.name}</Link>
                       </div>

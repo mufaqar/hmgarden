@@ -26,8 +26,6 @@ const Services = ({allServices, allTypes, allTypesWithChildren}:any) => {
 
 export default Services
 
-
-
 export const getStaticProps: GetStaticProps = async () => {
   const [services, typesWithChil] = await Promise.all([
     apolloClient.query({ query: AllServices }),

@@ -56,7 +56,7 @@ query AllServices {
 
   export const Types = gql `
   query Types {
-    types {
+    types(where: {parent: 0}) {
       nodes {
         name
         servicesTypeInfo {
