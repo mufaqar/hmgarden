@@ -1,4 +1,12 @@
 export const Services = [
+<<<<<<< HEAD
+     {
+          title: "Gardening",
+          link: "#",
+          image: "/images/Gardening.png"
+     }
+]
+=======
   {
     category: 'Gardening',
     link: '/services',
@@ -307,3 +315,4 @@ export const ServicesCategories = [
     icon: '/images/Vector6.png',
   },
 ];
+>>>>>>> main

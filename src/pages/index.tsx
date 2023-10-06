@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+import { Container, Header, Main, ServiceCard } from '@/components/imports'
+import Image from 'next/image'
+import { Services } from '@/const/services'
+import { IService } from '@/utils/types'
+
+=======
 import { Container, Header, Main, MainHeading, Review, ServiceArea, ServiceCard } from '@/components/imports'
 import Image from 'next/image'
 import { MainServices, ServicesSteps } from '@/const/services'
@@ -8,6 +15,7 @@ import Link from 'next/link'
 import { GetStaticProps } from 'next'
 import apolloClient from '@/config/client'
 import { Types } from '@/config/query'
+>>>>>>> main
 
 
 export default function Home({ allTypes }: any) {
@@ -15,6 +23,16 @@ export default function Home({ allTypes }: any) {
     <>
       <Header white />
       <Main />
+<<<<<<< HEAD
+      <section className='mt-12 mb-20'>
+        <Container>
+          <h2 className='text-center text-5xl font-semibold mb-20'>Our services</h2>
+          <div>
+            {
+              Services.map((service: IService, idx: number) => {
+                return (
+                  <ServiceCard data={service} key={idx} />
+=======
       <section className='mt-16 mb-40'>
         <Container>
           <MainHeading>Our services</MainHeading>
@@ -30,10 +48,14 @@ export default function Home({ allTypes }: any) {
                       </div>
                     </div>
                   </>
+>>>>>>> main
                 )
               })
             }
           </div>
+<<<<<<< HEAD
+
+=======
         </Container>
       </section>
       <section className='relative py-32 bg-no-repeat bg-center bg-cover' style={{ backgroundImage: `url(${background.src})` }}>
@@ -80,6 +102,7 @@ export default function Home({ allTypes }: any) {
           <div>
             <img src="/images/watercane.png" alt="" />
           </div>
+>>>>>>> main
         </Container>
       </section>
     </>

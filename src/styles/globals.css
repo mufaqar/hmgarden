@@ -6,6 +6,41 @@
      font-family: Poppins;
      src: url('../../public/fonts/poppins/Poppins-ExtraLight.ttf');
      font-weight: 200;
+<<<<<<< HEAD
+}
+@font-face {
+     font-family: Poppins;
+     src: url('../../public/fonts/poppins/Poppins-Light.ttf');
+     font-weight: 300;
+}
+@font-face {
+     font-family: Poppins;
+     src: url('../../public/fonts/poppins/Poppins-Regular.ttf');
+     font-weight: 400;
+}
+@font-face {
+     font-family: Poppins;
+     src: url('../../public/fonts/poppins/Poppins-Medium.ttf');
+     font-weight: 500;
+}
+@font-face {
+     font-family: Poppins;
+     src: url('../../public/fonts/poppins/Poppins-SemiBold.ttf');
+     font-weight: 600;
+}
+@font-face {
+     font-family: Poppins;
+     src: url('../../public/fonts/poppins/Poppins-Bold.ttf');
+     font-weight: 700;
+}
+@font-face {
+     font-family: Poppins;
+     src: url('../../public/fonts/poppins/Poppins-Black.ttf');
+     font-weight: 800;
+}
+body{
+     font-family: Poppins; 
+=======
 }
 @font-face {
      font-family: Poppins;
@@ -59,4 +94,5 @@ body{
 .single_service img{
      width:  100%;
      margin-bottom: 1.5rem;
+>>>>>>> main
 }
