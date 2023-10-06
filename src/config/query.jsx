@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const AllServices = gql`
 query AllServices {
-  services(where: {orderby: {field: MENU_ORDER, order: DESC}}, first: 100) {
+  services(first: 100, where: {orderby: {field: MENU_ORDER, order: ASC}}) {
        nodes {
          title
          slug
