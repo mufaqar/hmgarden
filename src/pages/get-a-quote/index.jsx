@@ -90,39 +90,6 @@ const ContactUs = () => {
                                         </div>
                                    </div>
                                    <div className='flex flex-col mt-3'>
-                                        <label className='capitalize text-sm'>How is the access to the Garden/Property?</label>
-                                        <div className='grid grid-cols gap-3'>
-                                             <select {...register("property_access")} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-black placeholder:text-gray-400 outline-none'>
-                                                  <option value="External Access">External Access</option>
-                                                  <option value="Through House">Through House</option>
-                                                  <option value="Through Garage">Through Garage</option>
-                                             </select>
-                                        </div>
-                                   </div>
-
-
-
-
-
-
-
-                                   <div className='mt-3'>
-                                        <label className='capitalize text-sm '>Please describe the job you would like to be done in a few words. </label>
-                                        <textarea {...register("describe_job", { required: true })} className='p-2 h-[60px] mt-1 rounded-sm px-4 w-full placeholder:font-light text-gray-600 outline-none' rows={6}></textarea>
-                                   </div>
-                                   <div className='flex flex-col mt-3'>
-                                        <label className='capitalize text-sm'>First and Last Name</label>
-                                        <input type="text" {...register("full_name", { required: true })} className='p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Enter your name' />
-                                   </div>
-                                   <div className='mt-3'>
-                                        <label className='capitalize text-sm'>Job address ( Nr, Street, Post Code) </label>
-                                        <input type="text" {...register("address", { required: true })} className='p-2 mt-1 rounded-sm px-4 w-full placeholder:font-light text-gray-600 outline-none' placeholder='Enter Nr, Street' />
-                                   </div>
-                              </div>
-                              <div className='flex flex-col justify-between items-end'>
-                                   <div className='w-full mb-6'>
-
-                                        <div className='flex flex-col mt-3'>
                                              <label className='capitalize text-sm'>What Kind of services do you need?</label>
                                              <div className="relative">
                                                   <select {...register("services", { required: true })} value={services} onChange={(e) => setServices(e.target.value)} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-black placeholder:text-gray-400 outline-none'>
@@ -152,8 +119,20 @@ const ContactUs = () => {
                                                   }
                                              </div>
                                         }
+                                        <div className='flex flex-col mt-3'>
+                                        <label className='capitalize text-sm'>How is the access to the Garden/Property?</label>
+                                        <div className='grid grid-cols gap-3'>
+                                             <select {...register("property_access")} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-black placeholder:text-gray-400 outline-none'>
+                                                  <option value="External Access">External Access</option>
+                                                  <option value="Through House">Through House</option>
+                                                  <option value="Through Garage">Through Garage</option>
+                                             </select>
+                                        </div>
+                                   </div>
 
-                                        <div className='mt-3'>
+                                   
+                                     
+                                   <div className='mt-3'>
                                              <label className='capitalize text-sm'>When would you like the work to begin?</label>
                                              <div className="relative">
                                                   <select {...register("workToBegin")} className='p-2 mt-1 appearance-none rounded-sm px-4 _select w-full font-light text-black placeholder:text-gray-400 outline-none'>
@@ -166,6 +145,39 @@ const ContactUs = () => {
                                              </div>
                                         </div>
                                         <div className='mt-3'>
+                                        <label className='capitalize text-sm '>Please describe the job you would like to be done in a few words. </label>
+                                        <textarea {...register("describe_job", { required: true })} className='p-2 h-[60px] mt-1 rounded-sm px-4 w-full placeholder:font-light text-gray-600 outline-none' rows={6}></textarea>
+                                   </div>
+
+
+
+
+
+
+
+
+                                  
+                              </div>
+                              <div className='flex flex-col justify-between items-end'>
+                                   <div className='w-full mb-6'>
+
+                                   
+                                   <div className='flex flex-col mt-3'>
+                                        <label className='capitalize text-sm'>First and Last Name</label>
+                                        <input type="text" {...register("full_name", { required: true })} className='p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Enter your name' />
+                                   </div>
+                                   <div className='flex flex-col mt-3'>
+                                             <label className='capitalize text-sm'>E-mail</label>
+                                             <input type="text" {...register("email", { required: true })} className='p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Enter your E-mail' />
+                                        </div>
+                                   <div className='mt-3'>
+                                        <label className='capitalize text-sm'>Job address ( Nr, Street, Post Code) </label>
+                                        <input type="text" {...register("address", { required: true })} className='p-2 mt-1 rounded-sm px-4 w-full placeholder:font-light text-gray-600 outline-none' placeholder='Enter Nr, Street' />
+                                   </div>
+
+                                   
+
+                                        <div className='mt-3'>
                                              <label className='capitalize text-sm'>pictures to give us a better idea  </label>
                                              <div class="flex items-center justify-center mt-1">
                                                   <label class="relative bg-white rounded-sm hover:shadow-lg p-2 px-4 w-full cursor-pointer">
@@ -177,10 +189,7 @@ const ContactUs = () => {
                                         </div>
 
 
-                                        <div className='flex flex-col'>
-                                             <label className='capitalize text-sm'>E-mail</label>
-                                             <input type="text" {...register("email", { required: true })} className='p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none' placeholder='Enter your E-mail' />
-                                        </div>
+                                        
                                    </div>
                                    {
                                         loading ? <input type='button' className={`border hover:bg-black mt-10 md:mt-0 cursor-pointer hover:text-white p-1.5 px-8 border-white bg-white text-black `} value='Email Sending...' /> :
