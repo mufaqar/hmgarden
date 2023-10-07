@@ -49,6 +49,11 @@ query AllServices {
           mediaItemUrl
         }
       }
+      servicesInfo {
+        beforeAfter {
+          mediaItemUrl
+        }
+      }
     }
   }
   `;
