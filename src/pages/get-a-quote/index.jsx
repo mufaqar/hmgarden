@@ -121,8 +121,7 @@ const ContactUs = () => {
                       Tiling or Painting
                     </option>
                     <option value="Pressure Washing">Pressure Washing</option>
-                    <option value="Disposal">Disposal</option>
-                    <option value="Brickwork">Brickwork</option>
+                  
                   </select>
                   <IoIosArrowDown className="text-2xl absolute right-3 top-[13px] text-black" />
                 </div>
