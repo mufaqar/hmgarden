@@ -2,9 +2,9 @@ import React from 'react'
 import { Container, MainHeading } from '../imports'
 import Link from 'next/link'
 import { BsEnvelope } from 'react-icons/bs'
-import { AiOutlineCalendar, AiOutlineClockCircle } from 'react-icons/ai'
+import {  AiFillFacebook, AiFillTwitterCircle } from 'react-icons/ai'
 import { BiMessageDetail } from 'react-icons/bi'
-import { FiShield } from 'react-icons/fi'
+
 
 
 const Footer = () => {
@@ -81,22 +81,19 @@ const navLinks = [
 const footerSocial = [
      {
           icon: <BsEnvelope/>,
-          link: "mailto:"
+          link: "mailto:homeandgardenmasters@gmail.com"
      },
      {
           icon: <BiMessageDetail/>,
-          link: "#"
+          link: "/get-a-quote"
+     },
+    
+     {
+          icon: <AiFillFacebook/>,
+          link: "https://facebook.com"
      },
      {
-          icon: <AiOutlineCalendar/>,
-          link: "#"
-     },
-     {
-          icon: <FiShield/>,
-          link: "#"
-     },
-     {
-          icon: <AiOutlineClockCircle/>,
-          link: "#"
+          icon: <AiFillTwitterCircle/>,
+          link: "https://twitter.com"
      }
 ]
