@@ -7,7 +7,7 @@ const Privacy = () => {
             <Header />
             <section className='my-20 md:mb-32'>
                 <div className='container flex flex-col md:flex-row mx-auto px-3'>
-                    <div className='w-full md:w-3/4 md:pr-10'>
+                    <div className='w-full  md:pr-10'>
                         <div>
                             <h3 className=' text-[54px] font-[600]'>Privacy Policy</h3>
                             <p className='mt-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -97,7 +97,7 @@ const Privacy = () => {
                         </div>
 
                     </div>
-                    <aside className='w-full md:w-1/4 hidden justify-around items-center mx-auto md:flex flex-col text-center'>
+                    {/* <aside className='w-full md:w-1/4 hidden justify-around items-center mx-auto md:flex flex-col text-center'>
                         <div className='mt-5'>
                             <button className=' text-[16px] font-[300] bg-black text-white w-32 py-1'>Find Us</button>
                             <p className='text-[12px] py-3'>Fint out if our franchisees cover your area.</p>
@@ -114,7 +114,7 @@ const Privacy = () => {
                             <button className=' text-[16px] font-[300] bg-black text-white w-32 py-1'>Find Us</button>
                             <p className='text-[12px] py-3'>Fint out if our franchisees cover your area.</p>
                         </div>
-                    </aside>
+                    </aside> */}
                 </div>
             </section>
         </>
