@@ -30,7 +30,7 @@ const Footer = () => {
           <ul className='flex gap-3 md:gap-8 mb-12'>
                {
                     footerSocial.map(({icon,link}:IFooterSocial, i:number)=>(
-                         <li key={i} className='shadow-md rounded-full text-gray-500 text-xl hover:text-black  p-3'><Link href={link}>{icon}</Link></li>
+                         <li key={i} className='shadow-md rounded-full text-gray-500 text-xl hover:text-black  p-3'><Link href={link} target='_blank'>{icon}</Link></li>
                     ))
                }
           </ul>
