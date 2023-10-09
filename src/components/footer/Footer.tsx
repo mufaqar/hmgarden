@@ -90,7 +90,7 @@ const footerSocial = [
     
      {
           icon: <AiFillFacebook/>,
-          link: "https://facebook.com"
+          link: "https://www.facebook.com/profile.php?id=61551956996609"
      },
      {
           icon: <AiFillTwitterCircle/>,
