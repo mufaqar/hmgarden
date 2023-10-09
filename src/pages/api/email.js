@@ -31,6 +31,7 @@ export default function (req, res) {
           <p><strong>Please Describe The Job You Would Like To Be Done In A Few Words: </strong> ${req.body.describe_job}</p>
           <p><strong>Full Name: </strong> ${req.body.full_name}</p>
           <p><strong>E-Mail: </strong> ${req.body.email}</p>
+          <p><strong>Mobile: </strong> ${req.body.mobile}</p>
           <p><strong>Address: </strong> ${req.body.address}</p>
           `,
           attachments: [{

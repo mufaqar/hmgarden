@@ -211,6 +211,15 @@ const ContactUs = () => {
                   />
                 </div>
                 <div className="flex flex-col mt-3">
+                  <label className="capitalize text-sm">Mobile No</label>
+                  <input
+                    type="text"
+                    {...register('mobile', { required: true })}
+                    className="p-2 mt-1 rounded-sm px-4 placeholder:font-light text-gray-600 outline-none"
+                    placeholder="Enter your Mobile Number"
+                  />
+                </div>
+                <div className="flex flex-col mt-3">
                   <label className="capitalize text-sm">E-mail</label>
                   <input
                     type="text"

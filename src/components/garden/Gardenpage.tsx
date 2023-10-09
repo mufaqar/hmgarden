@@ -1,5 +1,5 @@
 import React from 'react'
-import mainImage from '../../../public/images/main.png'
+import mainImage from '../../../public/images/main.jpg'
 
 function Gardenpage() {
   return (
