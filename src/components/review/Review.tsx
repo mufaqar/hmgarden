@@ -29,22 +29,23 @@ interface IReview {
 }
 
 const reviewData = [
+    
      {
-          avatar: "/images/avatar1.png",
-          title: "Amazing service, above and beyond",
-          review: "I used them for an end of tenancy clean, and they did a fantastic job. It turned out to be bigger than expected, but they remained professional, and bent over backwards to make sure I got what I wante ... read more",
-          name: "Andrew Thorburn",
+          avatar: "/images/michle.jpg",
+          title: "Customer",
+          review: "The team was punctual, professional, and courteous, and they went above and beyond to ensure that my home looked its best. They used state-of-the-art equipment and environmentally friendly cleaning solutions to remove years of built-up dirt, grime, and other pollutants from my home's exterior. Thank you for the exceptional work.",
+          name: "Michael"
      },
      {
-          avatar: "/images/avatar2.png",
-          title: "Amazing service, above and beyond",
-          review: "Far exceeded my expectations - my gardeners were professional, friendly and found time to do my front garden as well as my back! I could not be more impressed with how they handled the job. I will cer ... read more",
-          name: "Jasmine Pengelly"
+          avatar: "/images/rashid.jpg",
+          title: "Customer",
+          review: "I recently used the power washing services from this company and I couldn't be happier with the results. My driveway was stained and discolored from years of use, but after the team was finished with it, it looked brand new! The entire process was hassle-free, and the team was professional, courteous, and efficient. Overall, I would highly recommend this company to anyone in need of power washing services. The results were outstanding, the team was fantastic, and the prices were affordable. Thank you for the excellent work!",
+          name: "Rashid"
      },
      {
-          avatar: "/images/avatar3.png",
-          title: "Amazing service, above and beyond",
-          review: "Punctuality Phone call On arrival Cheerful welcome Very helpful and they did a very thorough job My carpets are cleaner than I thought possible so job exceeded expectations Thank You",
-          name: "Diana Farragher"
+          avatar: "/images/sara.jpg",
+          title: "Customer",
+          review: "My conservatory had been neglected for years, and it had become an eyesore on my property. But after the team was finished with it, it looked brand new! They exceeded my expectations, and I will definitely be using their services again in the future. Thank you for the outstanding work!",
+          name: "Sarah",
      }
 ]
