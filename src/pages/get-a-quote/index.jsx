@@ -11,36 +11,74 @@ const ContactUs = () => {
   const [servicesPoint, setServicesPoint] = useState('');
   const [selectedServicesPoint, setSelectedServicesPoint] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [fileName, setFileName] = useState('Choose an image')
 
   const {
     register,
     handleSubmit,
     control,
     reset,
+    watch,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const inputFile = watch('file');
+
+  const onSubmit = async (data) => {
     setLoading(true);
     data.servicesType = selectedServicesPoint;
-    fetch('/api/email', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json, text/plain, */*',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    }).then((res) => {
-      console.log('Response received');
-      if (res.status === 200) {
-        console.log('Response succeeded!');
-        alert('Message Successfully send.!');
-        reset();
-        setSelectedServicesPoint([]);
-        setServicesPoint([]);
-        setLoading(false);
+    const file = data.file[0]
+
+    const CLOUDINARY_CLOUD_NAME = "drokpzsz7"
+    const UPLOAD_PRESET = "siqj1van"
+
+    const Imgdata = new FormData();
+    Imgdata.append("file", file);
+    Imgdata.append(
+      "upload_preset",
+      UPLOAD_PRESET
+    );
+    Imgdata.append("cloud_name", CLOUDINARY_CLOUD_NAME);
+    Imgdata.append("folder", "HMGarden");
+    try {
+      const response = await fetch(
+        `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`,
+        {
+          method: "POST",
+          body: Imgdata,
+        }
+      );
+      const res = await response.json();
+      data.file = {
+        url: res.url,
+        name: `${res.original_filename}.${res.format}`
       }
-    });
+      SendMail()
+    } catch (error) {
+      console.log("🚀 ~ file: UploadImage.tsx:32 ~ handleImageChange ~ error:", error)
+    }
+
+
+    function SendMail(){
+      fetch('/api/email', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      }).then((res) => {
+        console.log('Response received');
+        if (res.status === 200) {
+          console.log('Response succeeded!');
+          alert('Message Successfully send.!');
+          reset();
+          setSelectedServicesPoint([]);
+          setServicesPoint([]);
+          setLoading(false);
+        }
+      });
+    }
   };
 
   useEffect(() => {
@@ -101,7 +139,7 @@ const ContactUs = () => {
               </div>
               <div className="flex flex-col mt-3">
                 <label className="capitalize text-sm">
-                  What Kind of services do you need?
+                  What Kind of services do you need? *
                 </label>
                 <div className="relative">
                   <select
@@ -121,7 +159,7 @@ const ContactUs = () => {
                       Tiling or Painting
                     </option>
                     <option value="Pressure Washing">Pressure Washing</option>
-                  
+
                   </select>
                   <IoIosArrowDown className="text-2xl absolute right-3 top-[13px] text-black" />
                 </div>
@@ -130,14 +168,14 @@ const ContactUs = () => {
               {servicesPoint.length > 0 && (
                 <div className="flex flex-wrap my-4 gap-4">
                   {servicesPoint.map((item, id) => (
-                    <div class="flex items-center mr-4" key={id}>
+                    <div className="flex items-center mr-4" key={id}>
                       <input
                         id={item}
                         type="checkbox"
                         name={item}
                         value={item}
                         onChange={(e) => handleValueChange(e)}
-                        class="w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
+                        className="w-6 h-6 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2"
                       />
                       <label for={item} className="capitalize pl-2 text-sm">
                         {item}
@@ -188,7 +226,7 @@ const ContactUs = () => {
               <div className="mt-3">
                 <label className="capitalize text-sm ">
                   Please describe the job you would like to be done in a few
-                  words.{' '}
+                  words.{' '} *
                 </label>
                 <textarea
                   {...register('describe_job', { required: true })}
@@ -244,15 +282,16 @@ const ContactUs = () => {
                   <label className="capitalize text-sm">
                     pictures to give us a better idea{' '}
                   </label>
-                  <div class="flex items-center justify-center mt-1">
-                    <label class="relative bg-white rounded-sm hover:shadow-lg p-2 px-4 w-full cursor-pointer">
-                      <span class="font-light text-black placeholder:text-gray-400">
-                        Choose an image
+                  <div className="flex items-center justify-center mt-1">
+                    <label className="relative bg-white rounded-sm hover:shadow-lg p-2 px-4 w-full cursor-pointer">
+                      <span className="font-light text-black placeholder:text-gray-400">
+                        { inputFile?.length > 0 ? inputFile[0]?.name : fileName}
                       </span>
                       <input
                         type="file"
                         accept="image/*"
-                        class="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
+                        {...register('file')}
+                        className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
                       />
                     </label>
                   </div>
