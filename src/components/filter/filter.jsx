@@ -63,22 +63,11 @@ function FilterComp({ allServices, allTypes, allTypesWithChildren }) {
       </div>
 
       <div className='grid sm:grid-cols-2 px-3 container mx-auto lg:grid-cols-3 gap-10 mt-16 '>
-        { // sub services list if exist 
-          cServices?.children?.nodes?.map((i) => {
-            return (
-              <div className="relative max-h-[250px] w-full h-full serviceCard-shadow group" key={i.name} onClick={()=>handleSubServices(i.name)}>
-                <Image src={i?.servicesTypeInfo?.image?.mediaItemUrl} alt={i.name} width={344} height={187} className='w-full h-full object-cover' />
-                <div className='absolute group-hover:h-full  bottom-0 bg-black/40  flex flex-col justify-center items-center p-3 text-white w-full transition-all duration-500 ease-in-out text-center'>
-                  <button className='text-xl'> {i.name}</button>
-                </div>
-              </div>
-            )
-          })
-        }
+        
         {
           ServicesList?.map((service, idx) => {
             return (
-              <ServiceCard data={service} key={idx} />
+              <ServiceCard data={service} key={idx} type={type} />
             )
           })
         }
@@ -86,7 +75,7 @@ function FilterComp({ allServices, allTypes, allTypesWithChildren }) {
       </div>
       {
         type === "Pressure Washing" &&
-        <div className="flex items-center justify-center mt-20 w-full"> <Link href="https://professionalpowerwashing.co.uk/our-services/wall-power-washing/" target="_blank" className="bg-white hover:scale-105 p-2 px-7 text-black">Check availability and prices</Link>      </div>
+        <div className="flex items-center justify-center mt-20 w-full"> <Link href="https://professionalpowerwashing.co.uk" target="_blank" className="bg-white hover:scale-105 p-2 px-7 text-black">Check availability and prices</Link>      </div>
       }
     </div>
   )
