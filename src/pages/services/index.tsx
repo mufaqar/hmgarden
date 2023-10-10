@@ -17,7 +17,6 @@ const Services = ({allServices, allTypes, allTypesWithChildren}:any) => {
         <Rectanglepage/>
         <Gardenpage/>
         <Review/>
-        <Clientpage/>
         <ServiceArea black/>
         <Link/>
     </>
