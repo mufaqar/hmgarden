@@ -3,7 +3,7 @@ import mainImage from '../../../public/images/main.jpg'
 
 function Gardenpage() {
   return (
-    <main className=' mt-32 w-full  h-screen ' style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${mainImage.src})` }}>
+    <main className=' mt-32 w-full  h-screen bg-no-repeat bg-cover ' style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${mainImage.src})` }}>
       <div className='container mx-auto px-4'>
       <div className='lg:w-[500px] w-full mx-auto text-center text-white pt-40'>
          <h2 className='text-3xl lg:text-36px font-semibold'>Meet the Home and Garden Masters cleaners</h2>
