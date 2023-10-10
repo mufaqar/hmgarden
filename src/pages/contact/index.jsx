@@ -31,29 +31,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='w-full border text-white flex flex-col md:flex-row items-center text-center justify-center mx-auto gap-10 border-none mt-14'>
-            <div className='lg:w-[440px] w-full flex flex-col items-center justify-center mt-5 lg:mt-0 border border-none'>
-              <Image src="/images/Group (2).svg" alt="" width={410} height={690} className='w-[87px]  py-3' />
-              <div>
-                <h4 className='text-[24px] font-[400]'>Business Clients</h4>
-                <p className='text-[16px] font-[400]'>Request a free quote callback</p>
-              </div>
-            </div>
-            <div className='lg:w-[440px] w-full flex flex-col items-center justify-center mt-6 lg:mt-0 border border-none'>
-              <Image src="/images/Group (1).svg" alt="" width={410} height={690} className='w-[87px] py-3 mt-5' />
-              <div>
-                <h4 className='text-[24px] font-[400]'>Join The Team</h4>
-                <p className='text-[16px] font-[400]'>Become a part of the Fantastic team</p>
-              </div>
-            </div>
-            <div className='lg:w-[440px] w-full flex flex-col items-center justify-center mt-5 lg:mt-0 border border-none'>
-              <Image src="/images/Vector (3).svg" alt="" width={410} height={690} className='w-[87px]  py-3' />
-              <div>
-                <h4 className='text-[24px] font-[400]'>PR & Marketing Partnerships</h4>
-                <p className='text-[16px] font-[400]'>Contact us about partnership options</p>
-              </div>
-            </div>
-          </div>
+         
         </div>
       </section>
       <CategoriesList />

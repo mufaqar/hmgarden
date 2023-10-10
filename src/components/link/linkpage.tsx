@@ -42,7 +42,7 @@ function linkpage() {
     <section className=' w-full'>
       <main className='container mx-auto px-4 mt-10 '>
         <div className='pt-20 flex justify-center text-center'>
-          <MainHeading className="max-w-[700px] mb-6">More H&M Garden Masters Services for you:</MainHeading>
+          <MainHeading className="max-w-[700px] mb-6">More Home&Garden Masters Services for you:</MainHeading>
         </div>
 
         <nav className="lg:px-20 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-5 max-w-7xl mx-auto">
