@@ -57,8 +57,9 @@ const Header = ({ white }: any) => {
                               <Link href="/about" className='hover:underline font-light'>About</Link>
                               <Link href="/contact" className='hover:underline font-light'>Contact</Link>                            
                             
-                              <div className={`lg:hidden flex gap-3`}>
+                              <div className={`lg:hidden flex flex-wrap gap-3`}>
                                    <Link href="tel:07468602556" className={`border p-2 px-5 border-white !text-white `}>Call Us 07468602556</Link>
+                                   <Link href="mailto:homeandgardenmasters@gmail.com" className={`border p-1 px-2 ${white ? 'border-white !text-white' : 'border-black'}`}>homeandgardenmasters@gmail.com</Link>
                                    <Link href="/get-a-quote" className={`border p-2 px-5 border-white bg-white text-black`}>Get in Touch</Link>
                               </div>
                          </nav>
