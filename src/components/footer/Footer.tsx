@@ -68,10 +68,7 @@ const navLinks = [
           name: "Company",
           link: "/about"
      },
-     {
-          name: "Privacy",
-          link: "/privacy"
-     },
+    
      {
           name: "Contact Us",
           link: "/contact"
