@@ -33,19 +33,19 @@ const reviewData = [
      {
           avatar: "/images/michle.jpg",
           title: "Customer",
-          review: "The team was punctual, professional, and courteous, and they went above and beyond to ensure that my home looked its best. They used state-of-the-art equipment and environmentally friendly cleaning solutions to remove years of built-up dirt, grime, and other pollutants from my home's exterior. Thank you for the exceptional work.",
+          review: "Thank you Home&Garden Masters company The technician came on booked time and he was friendly very explicit regarding what he will do and what we have to do forward. I  highly recommend. ",
           name: "Michael"
      },
      {
           avatar: "/images/rashid.jpg",
           title: "Customer",
-          review: "I recently used the power washing services from this company and I couldn't be happier with the results. My driveway was stained and discolored from years of use, but after the team was finished with it, it looked brand new! The entire process was hassle-free, and the team was professional, courteous, and efficient. Overall, I would highly recommend this company to anyone in need of power washing services. The results were outstanding, the team was fantastic, and the prices were affordable. Thank you for the excellent work!",
-          name: "Rashid"
+          review: "I had a mouse (or more ,not sure)  but after first visit  didn't see it anymore.I It's been 3 months since then. Happy to recommend for everyone. 					",
+          name: "Peter Stump"
      },
      {
           avatar: "/images/sara.jpg",
           title: "Customer",
-          review: "My conservatory had been neglected for years, and it had become an eyesore on my property. But after the team was finished with it, it looked brand new! They exceeded my expectations, and I will definitely be using their services again in the future. Thank you for the outstanding work!",
+          review: " Nothing to say more than:  Profesional,friendly and reliable cost.Thanks Home&Garden Masters",
           name: "Sarah",
      }
 ]
