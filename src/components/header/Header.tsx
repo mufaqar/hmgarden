@@ -64,10 +64,10 @@ const Header = ({ white }: any) => {
                          </nav>
 
                          {/* buttons  */}
-                         <div className='font-light z-40 lg:flex gap-4 hidden'>
-                              <Link href="tel:07468602556" className={`border p-1 px-4 ${white ? 'border-white !text-white' : 'border-black'}`}>Call Us 07468602556</Link>
-                              <Link href="mailto:homeandgardenmasters@gmail.com" className={`border p-1 px-4 ${white ? 'border-white !text-white' : 'border-black'}`}>homeandgardenmasters@gmail.com</Link>
-                              <Link href="/get-a-quote" className={`border p-1 px-4 ${white ? 'border-white bg-white text-black' : 'border-black bg-black !text-white'}`}>Get in Touch</Link>
+                         <div className='font-light z-40 lg:flex gap-2 hidden'>
+                              <Link href="tel:07468602556" className={`border p-1 px-2 ${white ? 'border-white !text-white' : 'border-black'}`}>Call Us 07468602556</Link>
+                              <Link href="mailto:homeandgardenmasters@gmail.com" className={`border p-1 px-2 ${white ? 'border-white !text-white' : 'border-black'}`}>homeandgardenmasters@gmail.com</Link>
+                              <Link href="/get-a-quote" className={`border p-1 px-2 ${white ? 'border-white bg-white text-black' : 'border-black bg-black !text-white'}`}>Get in Touch</Link>
                          </div>
                     </Container>
                </header>
