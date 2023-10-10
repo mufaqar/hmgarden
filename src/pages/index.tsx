@@ -52,7 +52,7 @@ export default function Home({ allTypes }: any) {
       <section>
         <Container className="grid md:grid-cols-2 gap-12 my-20 items-center">
           <div>
-            <MainHeading className="!text-left md:!leading-[60px]">What makes your service H&M Garden Masters?</MainHeading>
+            <MainHeading className="!text-left md:!leading-[60px]">What makes your service Home&Garden Masters?</MainHeading>
             <ul className='text-lg list-disc font-light mt-5 pl-5'>
               <li className='mt-4'>Same- & next-day visits</li>
               <li className='mt-4'>7 days-a-week availability</li>
