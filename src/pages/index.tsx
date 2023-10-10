@@ -73,9 +73,10 @@ export default function Home({ allTypes }: any) {
       <section className='bg-black text-white py-20'>
         <Container className="grid md:grid-cols-2 items-center">
           <div>
-            <MainHeading className="!text-left md:!leading-[60px]">Start your own franchise business with H&M Garden Masters Services</MainHeading>
-            <p className='max-w-[500px] mb-20 mt-4'>Develop your own successful business by investing in a proven franchise model that takes all risks out and provides full support. A business of your own but not on your own.</p>
-            <Link href="/get-a-quote" className={`border p-2 px-7 rounded-[6px] bg-white !text-black `}>Request a Quote</Link>
+            <MainHeading className="!text-left md:!leading-[60px]">
+              Develop your own successful business by investing in a proven franchise model that takes all risks out and provides full support. A business of your own but not on your own.</MainHeading>
+<br/>
+            <Link href="/get-a-quote" className={` mt-5 border p-2 px-7 rounded-[6px] bg-white !text-black `}>Request a Quote</Link>
           </div>
           <div>
             <img src="/images/watercane.png" alt="" />
