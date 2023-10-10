@@ -58,14 +58,15 @@ const Header = ({ white }: any) => {
                               <Link href="/contact" className='hover:underline font-light'>Contact</Link>                            
                             
                               <div className={`lg:hidden flex gap-3`}>
-                                   <Link href="tel:07468602556" className={`border p-2 px-5 border-white !text-white `}>Call Us 07 468 602 556</Link>
+                                   <Link href="tel:07468602556" className={`border p-2 px-5 border-white !text-white `}>Call Us 07468602556</Link>
                                    <Link href="/get-a-quote" className={`border p-2 px-5 border-white bg-white text-black`}>Get in Touch</Link>
                               </div>
                          </nav>
 
                          {/* buttons  */}
                          <div className='font-light z-40 lg:flex gap-4 hidden'>
-                              <Link href="tel:07468602556" className={`border p-1 px-4 ${white ? 'border-white !text-white' : 'border-black'}`}>Call Us 07 468 602 556</Link>
+                              <Link href="tel:07468602556" className={`border p-1 px-4 ${white ? 'border-white !text-white' : 'border-black'}`}>Call Us 07468602556</Link>
+                              <Link href="mailto:homeandgardenmasters@gmail.com" className={`border p-1 px-4 ${white ? 'border-white !text-white' : 'border-black'}`}>homeandgardenmasters@gmail.com</Link>
                               <Link href="/get-a-quote" className={`border p-1 px-4 ${white ? 'border-white bg-white text-black' : 'border-black bg-black !text-white'}`}>Get in Touch</Link>
                          </div>
                     </Container>
