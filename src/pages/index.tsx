@@ -60,7 +60,7 @@ export default function Home({ allTypes }: any) {
               <li className='mt-4'>Dedicated & insured service specialists</li>
               <li className='mt-4'>No contracts for regular services</li>
               <li className='mt-4'>Easily manage your bookings online</li>
-              <li className='mt-4'>Extra perks with the Fantastic Club</li>
+            
             </ul>
           </div>
           <div>
