@@ -6,7 +6,7 @@ function Gardenpage() {
     <main className=' mt-32 w-full  h-screen bg-no-repeat bg-cover ' style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${mainImage.src})` }}>
       <div className='container mx-auto px-4'>
       <div className='lg:w-[500px] w-full mx-auto text-center text-white pt-40'>
-         <h2 className='text-3xl lg:text-36px font-semibold'>Meet the Home and Garden Masters cleaners</h2>
+         <h2 className='text-3xl lg:text-36px font-semibold'>Meet the Home and Garden Masters Team</h2>
       </div>
       <div className='grid xl:grid-cols-3 mt-28 text-white lg:grid-cols-2 gap-5'>
         <div className='border lg:w-[473px] w-full border-none '>
