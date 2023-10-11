@@ -37,8 +37,8 @@ const Header = ({ white }: any) => {
                <header className={`mt-6 z-50 ${white ? 'text-white' : 'text-black'}`}>
                     <Container className="flex justify-between items-center">
                          {/* logo  */}
-                         <div className='z-40'>
-                              <Link href="/"><Image src="/images/logo.png" className='absolute top-2' alt="Logo" width={100} height={134} /></Link>
+                         <div className='z-40 '>
+                              <Link href="/"><Image src="/images/logo.png" className='absolute top-2 bg-white p-3 rounded-md' alt="Logo" width={100} height={134} /></Link>
                          </div>
 
                          {/* hamburger for mobile nav  */}
