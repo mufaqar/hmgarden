@@ -38,7 +38,7 @@ const Header = ({ white }: any) => {
                     <Container className="flex justify-between items-center">
                          {/* logo  */}
                          <div className='z-40 '>
-                              <Link href="/"><Image src="/images/logo.png" className='absolute top-2 bg-white p-3 rounded-md' alt="Logo" width={128} height={114} /></Link>
+                              <Link href="/"><Image src="/images/logo.png" className='absolute top-2 bg-white p-3 rounded-2xl' alt="Logo" width={128} height={114} /></Link>
                          </div>
 
                          {/* hamburger for mobile nav  */}
