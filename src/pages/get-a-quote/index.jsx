@@ -115,7 +115,7 @@ const ContactUs = () => {
             book a service for your home, office or garden.
           </h6>
           <p className="max-w-[900px] mt-4 text-center md:text-lg font-light">
-            in less then 30 mints
+            in less then 5 mints
           </p>
           <form
             onSubmit={handleSubmit(onSubmit)}
