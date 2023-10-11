@@ -25,10 +25,10 @@ const Slug = ({ singleService }) => {
         </div>
         <Image
           src={singleService?.servicesInfo?.beforeAfter?.mediaItemUrl}
-          className=" max-w-[980px] mt-10"
+          className=" max-w-[1000px] mt-10"
           alt="Before & After"
-          width={724}
-          height={630}
+          width={1000}
+          height={780}
         />
       </Container>
     </>
