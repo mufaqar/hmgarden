@@ -10,7 +10,7 @@ const ReviewCard = ({data}:any) => {
                <div className='w-[114px] absolute -top-5 -left-5 h-[114px] border border-white'/>
           </figure>
         
-          <p className='text-center mt-4 text-gray-400 font-light min-h-[240px]'>{data.review}</p>
+          <p className='text-center mt-4 text-gray-400 font-light min-h-[120px]'>{data.review}</p>
           <h6 className='mt-10 font-semibold'>{data.name}</h6>
           <h5 className='text-sm text-center max-w-[300px]'>{data.title}</h5>
           <div className='flex item-center text-xl mt-2 gap-2 text-[#]'>
