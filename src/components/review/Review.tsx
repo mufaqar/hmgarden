@@ -39,7 +39,7 @@ const reviewData = [
      {
           avatar: "/images/rashid.jpg",
           title: "Customer",
-          review: "I had a mouse (or more ,not sure)  but after first visit  didn't see it anymore.I It's been 3 months since then. Happy to recommend for everyone. 					",
+          review: "Our garden looks pristine and well-cared-for thanks to their expert team. They are reliable and truly transformed our outdoor space. Highly satisfied!   Really recommend!",
           name: "Peter Stump"
      },
      {
