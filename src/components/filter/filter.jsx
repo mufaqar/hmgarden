@@ -81,14 +81,13 @@ function FilterComp({ allServices, allTypes, allTypesWithChildren }) {
       </div>
       {type === 'Pressure Washing' && (
         <div className="flex items-center justify-center mt-20 w-full">
-          {' '}
           <Link
             href="https://professionalpowerwashing.co.uk"
             target="_blank"
             className="bg-white hover:scale-105 p-2 px-7 text-black"
           >
             Check availability and prices
-          </Link>{' '}
+          </Link>
         </div>
       )}
     </div>
