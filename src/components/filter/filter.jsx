@@ -8,7 +8,6 @@ import Image from 'next/image'
 function FilterComp({ allServices, allTypes, allTypesWithChildren }) {
 
   const [ServicesList, setServicesList] = useState()
-  console.log("🚀 ~ file: filter.jsx:11 ~ FilterComp ~ ServicesList:", ServicesList)
   const [type, setType] = useState('Gardening')
   const [cServices, setCServices] = useState()
   const { query } = useRouter()
