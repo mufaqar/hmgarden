@@ -14,7 +14,7 @@ import Head from 'next/head'
 export default function Home({ allTypes }: any) {
   return (
     <>
-    <Head>
+      <Head>
         <title>Home & Garden Masters | Elevating Your Living Spaces To New Heights</title>
         <meta name="description" content="Home & Garden Masters | Elevating Your Living Spaces To New Heights" />
         {/* <link rel="canonical" href="https://www.homeandgardenmasters.co.uk/" />
@@ -34,7 +34,7 @@ export default function Home({ allTypes }: any) {
         <meta name="twitter:site" content="@homeandgardenmasters" />
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="10 minutes" /> */}
-     
+
       </Head>
       <Header white />
       <Main />
@@ -83,7 +83,7 @@ export default function Home({ allTypes }: any) {
               <li className='mt-4'>Dedicated & insured service specialists</li>
               <li className='mt-4'>No contracts for regular services</li>
               <li className='mt-4'>Easily manage your bookings online</li>
-            
+
             </ul>
           </div>
           <div>
