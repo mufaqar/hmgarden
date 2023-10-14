@@ -6,7 +6,9 @@ import apolloClient from '../../config/client';
 import Image from 'next/image';
 
 const Slug = ({ singleService }) => {
-  console.log('🚀 ~ file: [slug].jsx:9 ~ Slug ~ singleService:', singleService);
+
+  const  mediaItemUrl  = singleService?.servicesInfo?.beforeAfter?.mediaItemUrl
+ 
 
   return (
     <>
@@ -23,13 +25,19 @@ const Slug = ({ singleService }) => {
         <div className="mt-4 text-center max-w-[980px] single_service">
           <div dangerouslySetInnerHTML={{ __html: singleService.content }} />
         </div>
-        <Image
-          src={singleService?.servicesInfo?.beforeAfter?.mediaItemUrl}
-          className=" max-w-[1000px] mt-10"
-          alt="Before & After"
-          width={1000}
-          height={780}
-        />
+
+       
+        {mediaItemUrl && (
+            <Image
+              src={mediaItemUrl}
+              className="max-w-[1000px] mt-10"
+              alt="Before & After"
+              width={1000}
+              height={780}
+            />
+          )}
+
+        
       </Container>
     </>
   );
