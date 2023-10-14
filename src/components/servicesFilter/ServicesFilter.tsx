@@ -3,8 +3,8 @@ import Image from 'next/image'
 const ServicesFilter = () => {
   return (
     <div className='container mx-auto px-4'>
-    <div className='flex flex-col md:flex-row mt-10'>
-      <div className='md:mt-10'>
+    <div className='flex flex-col md:flex-row mt-10 '>
+      <div className='md:mt-[70px] '>
         <h1 className='text-4xl md:text-5xl lg:text-[76px] font-semibold  leading-snug max-w-[976px]'>
           HOME AND GARDEN MASTERS
         </h1>
