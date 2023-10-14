@@ -4,12 +4,17 @@ import { useRouter } from 'next/router';
 import { ServiceSingle } from '../../config/query';
 import apolloClient from '../../config/client';
 import Image from 'next/image';
+import Head from 'next/head';
 
 const Slug = ({ singleService }) => {
   const mediaItemUrl = singleService?.servicesInfo?.beforeAfter?.mediaItemUrl;
 
   return (
     <>
+    <Head>
+        <title>Home And Garden Masters  Services | Home & Garden Masters </title>
+        <meta name="description" content="Over 100 services for your home and garden! 7 days-a-week availability, trained specialists, instant booking, all managed online." />
+      </Head>
       <Header black />
       <Container className="pt-20 flex flex-col  items-center">
         <MainHeading>{singleService?.title}</MainHeading>

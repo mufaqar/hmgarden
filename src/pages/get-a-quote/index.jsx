@@ -5,6 +5,7 @@ import mainImage from '../../../public/images/contact.png';
 import { IoIosArrowDown } from 'react-icons/io';
 import { useForm, Controller } from 'react-hook-form';
 import { servicePoint } from '@/const/formPoints';
+import Head from 'next/head';
 
 const ContactUs = () => {
   const [services, setServices] = useState('');
@@ -103,6 +104,13 @@ const ContactUs = () => {
 
   return (
     <>
+    <Head>
+        <title>Book A Service | Home & Garden Masters </title>
+        <meta
+          name="description"
+          content="Book A Service For Your Home, Office Or Garden."
+        />
+      </Head>
       <Header white />
       <main
         className="relative -mt-[58px] w-full bg-no-repeat bg-center bg-cover py-28"

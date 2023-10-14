@@ -4,21 +4,26 @@ import Link from '@/components/link/linkpage'
 import { Filter, Gardenpage, Header, Review, ServiceArea, ServicesFilter, } from '@/components/imports'
 import React from 'react'
 import { GetStaticProps } from 'next'
-import  apolloClient from '../../config/client'
-import {AllServices, TypesWithChildren} from '../../config/query'
+import apolloClient from '../../config/client'
+import { AllServices, TypesWithChildren } from '../../config/query'
+import Head from 'next/head'
 
-const Services = ({allServices, allTypes, allTypesWithChildren}:any) => {
+const Services = ({ allServices, allTypes, allTypesWithChildren }: any) => {
 
   return (
     <>
-        <Header/>
-        <ServicesFilter />
-        <Filter allServices={allServices} allTypes={allTypes} allTypesWithChildren={allTypesWithChildren}/>
-        <Rectanglepage/>
-        <Gardenpage/>
-        <Review/>
-        <ServiceArea black/>
-        <Link/>
+      <Head>
+        <title>Our Services | Home & Garden Masters </title>
+        <meta name="description" content="Over 100 services for your home and garden! 7 days-a-week availability, trained specialists, instant booking, all managed online." />
+      </Head>
+      <Header />
+      <ServicesFilter />
+      <Filter allServices={allServices} allTypes={allTypes} allTypesWithChildren={allTypesWithChildren} />
+      <Rectanglepage />
+      <Gardenpage />
+      <Review />
+      <ServiceArea black />
+      <Link />
     </>
   )
 }
