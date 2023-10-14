@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import mainImage from '../../../public/images/main.jpg'
+import mainImage from '../../../public/images/main1.jpg'
 import Link from 'next/link'
 import { Container } from '../imports'
 
