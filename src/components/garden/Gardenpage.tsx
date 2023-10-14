@@ -5,7 +5,7 @@ import { Container, MainHeading } from '../imports'
 function Gardenpage() {
   return (
     <>
-      <main className='mt-32 w-full h-screen bg-no-repeat bg-cover' style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${mainImage.src})` }}>
+      <main className='mt-32 w-full h-screen bg-no-repeat bg-cover' style={{ backgroundImage: `url(${mainImage.src})` }}>
         
 
 
