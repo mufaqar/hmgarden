@@ -70,7 +70,7 @@ export default function Home({ allTypes }: any) {
       </section>
       <Review black />
       <ServiceArea />
-      <section className='bg-black text-white py-20'>
+      {/* <section className='bg-black text-white py-20'>
         <Container className="grid md:grid-cols-2 items-center">
           <div>
             <MainHeading className="!text-left md:!leading-[60px]">
@@ -82,7 +82,7 @@ export default function Home({ allTypes }: any) {
             <img src="/images/watercane.png" alt="" />
           </div>
         </Container>
-      </section>
+      </section> */}
     </>
   )
 }

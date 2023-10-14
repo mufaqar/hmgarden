@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const ServiceArea = ({ black }: any) => {
      return (
-          <section className={`py-20 md:mb-8 px-5 ${black ? 'bg-black text-white' : 'bg-white text-black'} `}>
+          <section className={`py-20 md:mb-8 px-5 border-b ${black ? 'bg-black text-white' : 'bg-white text-black'} `}>
                <Container>
                     <MainHeading>Always at your service, right where you are</MainHeading>
                     <p className='mt-4 text-center font-light md:text-lg'>

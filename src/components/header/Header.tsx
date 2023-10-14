@@ -66,8 +66,8 @@ const Header = ({ white }: any) => {
 
                          {/* buttons  */}
                          <div className='font-light z-40 lg:flex gap-2 hidden'>
-                              <Link href="tel:07468602556" className={`lg:text-sm xl:text-base border p-1 px-2 bg-purple-900 ${white ? 'border-white !text-white' : 'border-black'}`}>Call Us 07468602556</Link>
-                              <Link href="mailto:homeandgardenmasters@gmail.com" className={`lg:text-sm xl:text-base border p-1 px-2 bg-purple-900 ${white ? 'border-white !text-white' : 'border-black'}`}>homeandgardenmasters@gmail.com</Link>
+                              <Link href="tel:07468602556" className={`lg:text-sm xl:text-base border p-1 px-2 bg-purple-900 text-white ${white ? 'border-white ' : 'border-black'}`}>Call Us 07468602556</Link>
+                              <Link href="mailto:homeandgardenmasters@gmail.com" className={`lg:text-sm xl:text-base border p-1 px-2 bg-purple-900 text-white ${white ? 'border-white !text-white' : 'border-black'}`}>homeandgardenmasters@gmail.com</Link>
                               <Link href="/get-a-quote" className={`lg:text-sm xl:text-base  border p-1 px-2 ${white ? 'border-white bg-white text-black' : 'border-black bg-black !text-white'}`}>Get in Touch</Link>
                          </div>
                     </Container>

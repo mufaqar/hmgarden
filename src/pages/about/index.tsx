@@ -7,6 +7,8 @@ const About = () => {
      return (
           <>
                <Header black />
+              
+               <AboutUs />
                <Container className="py-20 flex flex-col items-center max-w-[960px]">
                     <MainHeading>Why Choose Us?</MainHeading>
                     <p className='mt-4 text-center '><strong>Competitive and Reliable Pricing:</strong> Home&Garden Masters offers pricing that not only fits your budget but also provides excellent value for your investment. Our transparent and competitive rates ensure that you receive the best services without breaking the bank.</p>
@@ -28,7 +30,6 @@ const About = () => {
                     </p>
 
                </Container>
-               <AboutUs />
                <OurMission />
                <Container className="grid md:grid-cols-2 items-center ">
                     <div>
