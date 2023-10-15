@@ -8,7 +8,9 @@ const ServiceArea = ({ black }: any) => {
                <Container>
                     <MainHeading>Always at your service, right where you are</MainHeading>
                     <p className='mt-4 text-center font-light md:text-lg'>
-                         We won’t let your cleaning and maintenance problems get to you. Besides providing quality home services in London, the skilled Home&Garden Masters can also tidy up your garden, and maintain your home or office anywhere in Grays and 15 miles around. Here are some of the main locations we serve</p>
+                    We won’t let the problems get to you. Besides providing quality landscaping , the skilled Home&Garden Masters can also tidy up your garden, and maintain your home or office anywhere in Grays and 15 miles around. Here are some of the main locations we serve:
+                        
+                        </p>
                     <div className='flex flex-col md:flex-row justify-center md:mt-16 md:items-center lg:items-start'>
                          <ul className='flex w-1/2 md:w-1/6 flex-col gap-5 list-disc pt-16 '>
                               {
