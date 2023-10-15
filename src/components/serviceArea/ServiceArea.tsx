@@ -18,7 +18,7 @@ const ServiceArea = ({ black }: any) => {
                                    ))
                               }
                          </ul>
-                         <figure className='flex-1'><img src={black ? "/images/map.jpg" : "/images/map.jpg"} alt="" className=' mx-auto mt-10 md:mt-0' /></figure>
+                         <figure className='flex-1'><img src={black ? "/images/map.jpeg" : "/images/map.jpeg"} alt="" className=' mx-auto mt-10 md:mt-0' /></figure>
                          <div className='w-1/2 md:w-1/6 flex md:justify-end'>
                               <ul className='flex flex-col gap-5 list-disc pt-5 md:pt-16'>
                                    {
