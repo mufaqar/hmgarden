@@ -34,13 +34,24 @@ export default function (req, res) {
           <p><strong>Address: </strong> ${req.body.address}</p>
           `,
           attachments: [{
-               filename: req.body.file.name,
-               path: req.body.file.url
+               filename: req?.body?.file?.name,
+               path: req?.body?.file?.url
           }]
      }
 
+     const mailDataForProposal = {
+          from: EMAIL,
+          to: `mufaqar@gmail.com, homeandgardenmasters@gmail.com`,
+          subject: `Proposal`,
+          text: "",
+          html: `
+          <p><strong>Your Proposal: </strong> ${req.body.proposal}</p>
+          `,
+          
+     }
+
      // step-3
-     transporter.sendMail(mailData, function (err, info) {
+     transporter.sendMail(req.body?.proposal ? mailDataForProposal : mailData , function (err, info) {
           if (err)
                console.log(err)
           else {
