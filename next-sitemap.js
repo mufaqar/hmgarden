@@ -1,7 +1,7 @@
 const fs = require("fs");
 const { ApolloClient, InMemoryCache, gql } = require("@apollo/client")
 
-const FRONTEND_URI = "http://localhost:3000"
+const FRONTEND_URI = "https://www.homeandgardenmasters.co.uk"
 
 const apolloClient = new ApolloClient({
      uri: "https://hgm.amazingpestsolution.co.uk/graphql",
@@ -17,6 +17,7 @@ const hours = String(now.getHours()).padStart(2, '0');
 const minutes = String(now.getMinutes()).padStart(2, '0');
 const seconds = String(now.getSeconds()).padStart(2, '0');
 const formattedDateTime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}+00:00`;
+
 
 
 // generating sitemap here 
