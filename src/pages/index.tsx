@@ -34,6 +34,7 @@ export default function Home({ allTypes }: any) {
         <meta name="twitter:site" content="@homeandgardenmasters" />
         <meta name="twitter:label1" content="Est. reading time" />
         <meta name="twitter:data1" content="10 minutes" /> */}
+        <meta name="google-site-verification" content="tMtrWqKqeIoil2r4DagWr5mth0rG3nFa2nVlu7mCc7w" />
 
       </Head>
       <Header white />
