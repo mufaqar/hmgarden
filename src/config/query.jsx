@@ -44,6 +44,7 @@ query AllServices {
       title
       excerpt
       content
+      slug
       featuredImage {
         node {
           mediaItemUrl
