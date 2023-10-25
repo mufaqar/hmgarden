@@ -18,6 +18,41 @@ const About = () => {
           name="description"
           content="Transforming properties with 6 Years of Expertise With six years of dedicated experience"
         />
+        <link
+          rel="canonical"
+          href="https://www.homeandgardenmasters.co.uk/contact"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Home" />
+        <meta
+          property="og:description"
+          content="Book A Service For Your Home, Office Or Garden."
+        />
+        <meta
+          property="og:url"
+          content="https://www.homeandgardenmasters.co.uk/contact"
+        />
+        <meta property="og:site_name" content="Home & Garden Mastersg" />
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/profile.php?id=61551956996609"
+        />
+        <meta
+          property="article:modified_time"
+          content="2023-07-06T22:58:46+00:00"
+        />
+        <meta
+          property="og:image"
+          content="https://hgm.amazingpestsolution.co.uk/wp-content/uploads/2023/10/shutterstock_1794449392.png"
+        />
+        <meta property="og:image:width" content="344" />
+        <meta property="og:image:height" content="184" />
+        <meta property="og:image:type" content="image/jpng" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@homeandgardenmasters" />
+        <meta name="twitter:label1" content="Est. reading time" />
+        <meta name="twitter:data1" content="10 minutes" />
       </Head>
       <Header black />
       <Container className="py-20 flex flex-col items-center">

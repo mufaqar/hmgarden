@@ -12,7 +12,7 @@ const ContactUs = () => {
   const [servicesPoint, setServicesPoint] = useState('');
   const [selectedServicesPoint, setSelectedServicesPoint] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [fileName, setFileName] = useState('Choose an image')
+  const [fileName, setFileName] = useState('Choose an image');
 
   const {
     register,
@@ -28,39 +28,38 @@ const ContactUs = () => {
   const onSubmit = async (data) => {
     setLoading(true);
     data.servicesType = selectedServicesPoint;
-    const file = data.file[0]
+    const file = data.file[0];
 
-    const CLOUDINARY_CLOUD_NAME = "drokpzsz7"
-    const UPLOAD_PRESET = "siqj1van"
+    const CLOUDINARY_CLOUD_NAME = 'drokpzsz7';
+    const UPLOAD_PRESET = 'siqj1van';
 
     const Imgdata = new FormData();
-    Imgdata.append("file", file);
-    Imgdata.append(
-      "upload_preset",
-      UPLOAD_PRESET
-    );
-    Imgdata.append("cloud_name", CLOUDINARY_CLOUD_NAME);
-    Imgdata.append("folder", "HMGarden");
+    Imgdata.append('file', file);
+    Imgdata.append('upload_preset', UPLOAD_PRESET);
+    Imgdata.append('cloud_name', CLOUDINARY_CLOUD_NAME);
+    Imgdata.append('folder', 'HMGarden');
     try {
       const response = await fetch(
         `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`,
         {
-          method: "POST",
+          method: 'POST',
           body: Imgdata,
         }
       );
       const res = await response.json();
       data.file = {
         url: res.url,
-        name: `${res.original_filename}.${res.format}`
-      }
-      SendMail()
+        name: `${res.original_filename}.${res.format}`,
+      };
+      SendMail();
     } catch (error) {
-      console.log("🚀 ~ file: UploadImage.tsx:32 ~ handleImageChange ~ error:", error)
+      console.log(
+        '🚀 ~ file: UploadImage.tsx:32 ~ handleImageChange ~ error:',
+        error
+      );
     }
 
-
-    function SendMail(){
+    function SendMail() {
       fetch('/api/email', {
         method: 'POST',
         headers: {
@@ -104,12 +103,47 @@ const ContactUs = () => {
 
   return (
     <>
-    <Head>
+      <Head>
         <title>Book A Service | Home & Garden Masters </title>
         <meta
           name="description"
           content="Book A Service For Your Home, Office Or Garden."
         />
+        <link
+          rel="canonical"
+          href="https://www.homeandgardenmasters.co.uk/get-a-quote"
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Home" />
+        <meta
+          property="og:description"
+          content="Book A Service For Your Home, Office Or Garden."
+        />
+        <meta
+          property="og:url"
+          content="https://www.homeandgardenmasters.co.uk/get-a-quote"
+        />
+        <meta property="og:site_name" content="Home & Garden Mastersg" />
+        <meta
+          property="article:publisher"
+          content="https://www.facebook.com/profile.php?id=61551956996609"
+        />
+        <meta
+          property="article:modified_time"
+          content="2023-07-06T22:58:46+00:00"
+        />
+        <meta
+          property="og:image"
+          content="https://hgm.amazingpestsolution.co.uk/wp-content/uploads/2023/10/shutterstock_1794449392.png"
+        />
+        <meta property="og:image:width" content="344" />
+        <meta property="og:image:height" content="184" />
+        <meta property="og:image:type" content="image/jpng" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@homeandgardenmasters" />
+        <meta name="twitter:label1" content="Est. reading time" />
+        <meta name="twitter:data1" content="10 minutes" />
       </Head>
       <Header white />
       <main
@@ -167,7 +201,6 @@ const ContactUs = () => {
                       Tiling or Painting
                     </option>
                     <option value="Pressure Washing">Pressure Washing</option>
-
                   </select>
                   <IoIosArrowDown className="text-2xl absolute right-3 top-[13px] text-black" />
                 </div>
@@ -234,7 +267,7 @@ const ContactUs = () => {
               <div className="mt-3">
                 <label className="capitalize text-sm ">
                   Please describe the job you would like to be done in a few
-                  words.{' '} *
+                  words. *
                 </label>
                 <textarea
                   {...register('describe_job', { required: true })}
@@ -293,7 +326,7 @@ const ContactUs = () => {
                   <div className="flex items-center justify-center mt-1">
                     <label className="relative bg-white rounded-sm hover:shadow-lg p-2 px-4 w-full cursor-pointer">
                       <span className="font-light text-black placeholder:text-gray-400">
-                        { inputFile?.length > 0 ? inputFile[0]?.name : fileName}
+                        {inputFile?.length > 0 ? inputFile[0]?.name : fileName}
                       </span>
                       <input
                         type="file"

@@ -17,7 +17,7 @@ export default function Home({ allTypes }: any) {
       <Head>
         <title>Home & Garden Masters | Elevating Your Living Spaces To New Heights</title>
         <meta name="description" content="Home & Garden Masters | Elevating Your Living Spaces To New Heights" />
-        {/* <link rel="canonical" href="https://www.homeandgardenmasters.co.uk/" />
+        <link rel="canonical" href="https://www.homeandgardenmasters.co.uk/" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Home" />
@@ -33,7 +33,7 @@ export default function Home({ allTypes }: any) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@homeandgardenmasters" />
         <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="10 minutes" /> */}
+        <meta name="twitter:data1" content="10 minutes" />
         <meta name="google-site-verification" content="tMtrWqKqeIoil2r4DagWr5mth0rG3nFa2nVlu7mCc7w" />
 
       </Head>
