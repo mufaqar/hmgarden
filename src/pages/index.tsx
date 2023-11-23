@@ -5,7 +5,7 @@ import { IService } from '@/utils/types'
 import background from '../../public/images/stepbg.png'
 import StepCard from '@/components/card/step.card'
 import Link from 'next/link'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps, GetStaticProps } from 'next'
 import apolloClient from '@/config/client'
 import { Types } from '@/config/query'
 import Head from 'next/head'
@@ -112,7 +112,7 @@ export default function Home({ allTypes }: any) {
 }
 
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps : GetServerSideProps  = async () => {
   const [typesRes] = await Promise.all([
     apolloClient.query({ query: Types }),
   ]);

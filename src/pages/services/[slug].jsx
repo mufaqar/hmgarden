@@ -61,7 +61,7 @@ const Slug = ({ singleService }) => {
 
 export default Slug;
 
-export const getStaticProps = async ({ params }) => {
+export const getServerSideProps  = async ({ params }) => {
   const services = await apolloClient.query({
     query: ServiceSingle,
     variables: {
@@ -77,10 +77,10 @@ export const getStaticProps = async ({ params }) => {
   };
 };
 
-export async function getStaticPaths() {
-  const paths = [];
-  return {
-    paths,
-    fallback: 'blocking',
-  };
-}
+// export async function getStaticPaths() {
+//   const paths = [];
+//   return {
+//     paths,
+//     fallback: 'blocking',
+//   };
+// }

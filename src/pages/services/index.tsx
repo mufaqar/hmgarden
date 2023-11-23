@@ -1,9 +1,8 @@
 import Rectanglepage from '@/components/Rectangle/Rectanglepage'
-import Clientpage from '@/components/clientss/clientpage'
 import Link from '@/components/link/linkpage'
 import { Filter, Gardenpage, Header, Review, ServiceArea, ServicesFilter, } from '@/components/imports'
 import React from 'react'
-import { GetStaticProps } from 'next'
+import { GetServerSideProps} from 'next'
 import apolloClient from '../../config/client'
 import { AllServices, TypesWithChildren } from '../../config/query'
 import Head from 'next/head'
@@ -47,7 +46,7 @@ const Services = ({ allServices, allTypes, allTypesWithChildren }: any) => {
 
 export default Services
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps : GetServerSideProps  = async () => {
   const [services, typesWithChil] = await Promise.all([
     apolloClient.query({ query: AllServices }),
     apolloClient.query({ query: TypesWithChildren }),
