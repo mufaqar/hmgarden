@@ -13,7 +13,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Contact Us | Home & Garden Masters </title>
+        <title>Contact Us HOME & GARDEN MASTERS | Home & Garden Masters </title>
         <meta
           name="description"
           content="Transforming properties with 6 Years of Expertise With six years of dedicated experience"

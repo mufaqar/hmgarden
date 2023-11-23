@@ -8,8 +8,8 @@ const About = () => {
      return (
           <>
                <Head>
-                    <title>About Us | Home & Garden Masters </title>
-                    <meta name="description" content="Transforming properties with 6 Years of Expertise" />
+                    <title>About Home & Garden Masters | Home & Garden Masters </title>
+                    <meta name="description" content="Home&Garden Masters, situated in the charming town of Grays Essex, brings six years of dedicated experience to the forefront of the home and garden improvement industry. " />
                     <link
                          rel="canonical"
                          href="https://www.homeandgardenmasters.co.uk/about"
@@ -19,7 +19,7 @@ const About = () => {
                     <meta property="og:title" content="Home" />
                     <meta
                          property="og:description"
-                         content="Book A Service For Your Home, Office Or Garden."
+                         content="Home&Garden Masters, situated in the charming town of Grays Essex, brings six years of dedicated experience to the forefront of the home and garden improvement industry. "
                     />
                     <meta
                          property="og:url"

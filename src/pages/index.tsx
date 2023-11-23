@@ -16,12 +16,12 @@ export default function Home({ allTypes }: any) {
     <>
       <Head>
         <title>Home & Garden Masters | Elevating Your Living Spaces To New Heights</title>
-        <meta name="description" content="Home & Garden Masters | Elevating Your Living Spaces To New Heights" />
+        <meta name="description" content="At Home&Garden Masters, we are committed to enhancing your property's beauty and functionality." />
         <link rel="canonical" href="https://www.homeandgardenmasters.co.uk/" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Home" />
-        <meta property="og:description" content="Home & Garden Masters | Elevating Your Living Spaces To New Heights" />
+        <meta property="og:description" content="At Home&Garden Masters, we are committed to enhancing your property's beauty and functionality." />
         <meta property="og:url" content="https://www.homeandgardenmasters.co.uk/" />
         <meta property="og:site_name" content="Home & Garden Mastersg" />
         <meta property="article:publisher" content="https://www.facebook.com/profile.php?id=61551956996609" />

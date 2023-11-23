@@ -12,7 +12,7 @@ const Slug = ({ singleService }) => {
   return (
     <>
     <Head>
-        <title>Home And Garden Masters  Services | Home & Garden Masters </title>
+        <title> Home And Garden Masters  Services | Home & Garden Masters </title>
         <meta name="description" content="Over 100 services for your home and garden! 7 days-a-week availability, trained specialists, instant booking, all managed online." />
         <link rel="canonical" href={`https://www.homeandgardenmasters.co.uk/services/${singleService?.slug}`} />
         <meta property="og:locale" content="en_US" />
