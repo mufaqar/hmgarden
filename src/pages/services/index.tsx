@@ -13,7 +13,7 @@ const Services = ({ allServices, allTypes, allTypesWithChildren }: any) => {
     <>
       <Head>
         <title>HOME AND GARDEN MASTERS Services | Home & Garden Masters </title>
-        <meta name="description" content="Over 100 services for your home and garden! 7 days-a-week availability, trained specialists, instant booking, all managed online." />
+        <meta name="description" content="Over 100 services for your home and garden. 7 days-a-week availability, trained specialists, instant booking, all managed online." />
         <link rel="canonical" href="https://www.homeandgardenmasters.co.uk/services" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
